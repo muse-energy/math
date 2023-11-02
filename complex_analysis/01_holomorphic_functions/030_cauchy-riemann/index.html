@@ -169,7 +169,7 @@
         
   
   <span class="md-ellipsis">
-    test
+    このページについて
   </span>
   
 
@@ -443,6 +443,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -507,6 +514,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -523,8 +537,8 @@
 
 
 <h1 id="cauchy-riemann">Cauchy-Riemannの方程式</h1>
+<p>複素数は二つの実数の組として表されるので、複素関数は、二つの実数を引数として二つの実数を返すような関数だと思うこともできる。実二変数関数に対しては、偏微分や全微分を用いて局所的なふるまいを調べることができるのだった。このページでは、複素微分可能性が偏微分を用いてどのように記述できるかを説明する。</p>
 <h2 id="_1">複素微分と偏微分</h2>
-<p>複素数は二つの実数の組として表されるので、複素関数は、二つの実数を引数として二つの実数を返すような関数だと思うこともできる。実二変数関数に対しては、偏微分や全微分を用いて局所的なふるまいを調べることができるのだった。以下では、複素微分可能性が偏微分を用いてどのように</p>
 <p>実数 <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span> を用いて、複素数 <span class="arithmatex">\(z\)</span> を <span class="arithmatex">\(z= x + iy\)</span> と表すことにする。</p>
 <p><span class="arithmatex">\(\Omega \subset \mathbb{C}\)</span> を領域とする。複素関数 <span class="arithmatex">\(f: \Omega \to \mathbb{C}\)</span> を、ふたつの実関数<span class="arithmatex">\(u, v: \Omega \to \mathbb{R}\)</span> を用いて
 $$f(x+iy) = u(x,y) + iv(x,y) $$
@@ -606,16 +620,29 @@ $$ - \frac{\partial u}{\partial y}(x,y) = \frac{\partial v}{\partial x}(x,y) = \
 が成り立つことがわかる。</p>
 <p>(2)<span class="arithmatex">\(\Rightarrow\)</span>(1) <span class="arithmatex">\(u\)</span>, <span class="arithmatex">\(v\)</span> が <span class="arithmatex">\((x, y)\)</span> において全微分可能かつCauchy-Riemannの方程式を満たすことから、ある実数 <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\beta\)</span> が存在して、</p>
 <div class="arithmatex">\[\begin{align}
-u(\xi, \eta) &amp;= u(x,y) + \alpha (\xi-x) - \beta(\eta - y) + r_1(x, y)\\
-v(\xi, \eta) &amp;= v(x,y) + \beta(\xi-x) + \alpha(\eta - y) + r_2(x,y)
+u(\xi, \eta) &amp;= u(x,y) + \alpha (\xi-x) - \beta(\eta - y) + r_1(\xi, \eta)\\
+v(\xi, \eta) &amp;= v(x,y) + \beta(\xi-x) + \alpha(\eta - y) + r_2(\xi,\eta)
 \end{align} \]</div>
-<p>と書けて、<span class="arithmatex">\(r_1\)</span>, <span class="arithmatex">\(r_2\)</span> は
-$$\lim_{(\xi, \eta) \to (x,y)} \frac{|r_1(x,y)|}{|(\xi-x, \eta-y)|} = 0 $$
-$$\lim_{(\xi, \eta) \to (x,y)} \frac{|r_2(x,y)|}{|(\xi-x, \eta-y)|} = 0 $$
-をみたすようにできる。 <span class="arithmatex">\((3)\)</span> 式に <span class="arithmatex">\((4)\)</span> 式の <span class="arithmatex">\(i\)</span> 倍を足すと、</p>
+<p>と書いたときに、<span class="arithmatex">\(r_1\)</span>, <span class="arithmatex">\(r_2\)</span> が</p>
+<div class="arithmatex">\[\lim_{(\xi, \eta) \to (x,y)} \frac{|r_1(\xi,\eta)|}{ \|(\xi-x, \eta-y)\|} = 0, \,\,\,\,\lim_{(\xi, \eta) \to (x,y)} \frac{|r_2(\xi,\eta)|}{ \|(\xi-x, \eta-y)\|} = 0 \]</div>
+<p>をみたすようにできる。 <span class="arithmatex">\((3)\)</span> 式に <span class="arithmatex">\((4)\)</span> 式の <span class="arithmatex">\(i\)</span> 倍を足すと、</p>
 <div class="arithmatex">\[\begin{align*} u(\xi, \eta) + i v(\xi, \eta) =&amp;\, u(x,y) + i v (x,y) \\
  &amp;  + \alpha((\xi-x) + i (\eta - y)) + \beta(i(\xi-x) - (\eta-y))\\
- &amp; + r_1(x,y) + ir_2(x,y) \end{align*}\]</div>
+ &amp; + r_1(\xi,\eta) + ir_2(\xi,\eta)\end{align*} \]</div>
+<p>を得る。<span class="arithmatex">\(r(w) := r_1(\xi, \eta) + i r_2(\xi, \eta)\)</span> とおいて整理すると、</p>
+<div class="arithmatex">\[\begin{align*}f(w)&amp;=f(z) + \alpha \cdot (w-z) + \beta \cdot i(w-z) + r(w)\\
+&amp;= f(z) + (\alpha + i\beta)(w-z) + r(w) \end{align*} \]</div>
+<p>となる。あとは、<span class="arithmatex">\(r(w)\)</span> の項が <span class="arithmatex">\(o(|w-z|)\)</span> のオーダーであることを見ればよいが、</p>
+<div class="arithmatex">\[\lim_{w \to z} \frac{|r(w)|}{|w-z|} \leq \lim_{ (\xi,\eta) \to (x, y) } \left(\frac{|r_1(\xi, \eta)|}{\|(\xi-x, \eta - y)\|} + \frac{|r_2(\xi, \eta)|}{\|(\xi-x, \eta - y)\|}\right) = 0 \]</div>
+<p>よりok。<span class="arithmatex">\(\square\)</span></p>
+<h2 id="_2">まとめ</h2>
+<div class="admonition summary">
+<p class="admonition-title">まとめ</p>
+<ul>
+<li>複素微分可能性から、Cauchy-Riemannの方程式を導いた。</li>
+<li>複素微分可能であることと、全微分可能かつCauchy-Riemannの方程式をみたすことの同値性を示した。</li>
+</ul>
+</div>
 
 
 
