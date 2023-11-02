@@ -1,9 +1,9 @@
 # Cauchy-Riemannの方程式
 
+
+複素数は二つの実数の組として表されるので、複素関数は、二つの実数を引数として二つの実数を返すような関数だと思うこともできる。実二変数関数に対しては、偏微分や全微分を用いて局所的なふるまいを調べることができるのだった。このページでは、複素微分可能性が偏微分を用いてどのように記述できるかを説明する。
+
 ## 複素微分と偏微分
-
-複素数は二つの実数の組として表されるので、複素関数は、二つの実数を引数として二つの実数を返すような関数だと思うこともできる。実二変数関数に対しては、偏微分や全微分を用いて局所的なふるまいを調べることができるのだった。以下では、複素微分可能性が偏微分を用いてどのように
-
 実数 $x$, $y$ を用いて、複素数 $z$ を $z= x + iy$ と表すことにする。
 
 $\Omega \subset \mathbb{C}$ を領域とする。複素関数 $f: \Omega \to \mathbb{C}$ を、ふたつの実関数$u, v: \Omega \to \mathbb{R}$ を用いて
@@ -113,15 +113,32 @@ $$ - \frac{\partial u}{\partial y}(x,y) = \frac{\partial v}{\partial x}(x,y) = \
 (2)$\Rightarrow$(1) $u$, $v$ が $(x, y)$ において全微分可能かつCauchy-Riemannの方程式を満たすことから、ある実数 $\alpha$, $\beta$ が存在して、
 
 $$\begin{align}
-u(\xi, \eta) &= u(x,y) + \alpha (\xi-x) - \beta(\eta - y) + r_1(x, y)\\
-v(\xi, \eta) &= v(x,y) + \beta(\xi-x) + \alpha(\eta - y) + r_2(x,y)
+u(\xi, \eta) &= u(x,y) + \alpha (\xi-x) - \beta(\eta - y) + r_1(\xi, \eta)\\
+v(\xi, \eta) &= v(x,y) + \beta(\xi-x) + \alpha(\eta - y) + r_2(\xi,\eta)
 \end{align} $$
 
-と書けて、$r_1$, $r_2$ は
-$$\lim_{(\xi, \eta) \to (x,y)} \frac{|r_1(x,y)|}{\|(\xi-x, \eta-y)\|} = 0 $$
-$$\lim_{(\xi, \eta) \to (x,y)} \frac{|r_2(x,y)|}{\|(\xi-x, \eta-y)\|} = 0 $$
+と書いたときに、$r_1$, $r_2$ が
+
+$$\lim_{(\xi, \eta) \to (x,y)} \frac{|r_1(\xi,\eta)|}{ \|(\xi-x, \eta-y)\|} = 0, \,\,\,\,\lim_{(\xi, \eta) \to (x,y)} \frac{|r_2(\xi,\eta)|}{ \|(\xi-x, \eta-y)\|} = 0 $$
+
 をみたすようにできる。 $(3)$ 式に $(4)$ 式の $i$ 倍を足すと、
 
 $$\begin{align*} u(\xi, \eta) + i v(\xi, \eta) =&\, u(x,y) + i v (x,y) \\
  &  + \alpha((\xi-x) + i (\eta - y)) + \beta(i(\xi-x) - (\eta-y))\\
- & + r_1(x,y) + ir_2(x,y) \end{align*}$$
+ & + r_1(\xi,\eta) + ir_2(\xi,\eta)\end{align*} $$
+
+を得る。$r(w) := r_1(\xi, \eta) + i r_2(\xi, \eta)$ とおいて整理すると、
+
+$$\begin{align*}f(w)&=f(z) + \alpha \cdot (w-z) + \beta \cdot i(w-z) + r(w)\\
+&= f(z) + (\alpha + i\beta)(w-z) + r(w) \end{align*} $$
+
+となる。あとは、$r(w)$ の項が $o(|w-z|)$ のオーダーであることを見ればよいが、
+
+$$\lim_{w \to z} \frac{|r(w)|}{|w-z|} \leq \lim_{ (\xi,\eta) \to (x, y) } \left(\frac{|r_1(\xi, \eta)|}{\|(\xi-x, \eta - y)\|} + \frac{|r_2(\xi, \eta)|}{\|(\xi-x, \eta - y)\|}\right) = 0 $$
+
+よりok。$\square$
+
+## まとめ
+!!! summary "まとめ"
+    - 複素微分可能性から、Cauchy-Riemannの方程式を導いた。
+    - 複素微分可能であることと、全微分可能かつCauchy-Riemannの方程式をみたすことの同値性を示した。

@@ -1,23 +1,14 @@
-# test
+# このページについて
 
-$\mathbb{R}$：実数
-$\int_0^1 f(x)dx$
+数学のお勉強メモや勉強会のノート(を整形したもの)を置いていきます。
 
-$$\int_0^1 f(x)dx$$
+当面はざくざく書くことを目標にしています。
+誤りはなるべくないようにしたいつもりですが、不十分なところがあるかも…。
 
-$\begin{pmatrix}a & b \\ c & d\end{pmatrix}$
+何かあれば Twitter: [@muse_energy](https://twitter.com/muse_energy) にご連絡ください。(お手柔らかに…)
 
-$$\begin{align*}   a &=b+c\\
-      &=e+f
-\end{align*}$$
 
-!!! theorem "定理"
-    定理のテスト
+## どうやって作ったか
+MkDocs (Material for MkDocs) + KaTeX でやっています。
 
-    $$\int_0^1 x^2 dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3}$$
-    
-    のように計算できます。
-
-$$\xymatrix{
-    A & B
-}$$
+別行立て数式あたりで微妙に変な挙動がある気がするがイマイチよくわからない…
