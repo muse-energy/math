@@ -1,0 +1,53 @@
+.md-typeset .admonition {
+    font-size: inherit;  /* 親要素と同じフォントサイズを継承 */
+  }
+  .katex-display {
+    margin: 0.5em 0;
+  }
+  .md-typeset .admonition,
+  .md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+  }
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .md-typeset .admonition.theorem,
+  .md-typeset details.theorem {
+    border-color: rgb(43, 155, 70);
+  }
+  .md-typeset .theorem > .admonition-title,
+  .md-typeset .theorem > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+  .md-typeset .theorem > .admonition-title::before,
+  .md-typeset .theorem > summary::before {
+    background-color: rgb(43, 155, 70);
+  }
+
+  .md-typeset .admonition.proposition,
+  .md-typeset details.proposition {
+    border-color: rgb(43, 155, 70);
+  }
+  .md-typeset .proposition > .admonition-title,
+  .md-typeset .proposition > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+  .md-typeset .proposition > .admonition-title::before,
+  .md-typeset .proposition > summary::before {
+    background-color: rgb(43, 155, 70);
+  }
+
+  .md-typeset .admonition.definition,
+  .md-typeset details.definition {
+    border-color: rgb(250, 140, 140);
+  }
+  .md-typeset .definition > .admonition-title,
+  .md-typeset .definition > summary {
+    background-color: rgba(250, 140, 140, 0.1);
+  }
+  .md-typeset .definition > .admonition-title::before,
+  .md-typeset .definition > summary::before {
+    background-color: rgb(250, 140, 140);
+  }
