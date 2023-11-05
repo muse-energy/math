@@ -14,6 +14,8 @@
         <link rel="prev" href="../030_cauchy-riemann/">
       
       
+        <link rel="next" href="../../02_complex_integrals/010_holomorphic_function/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
@@ -476,10 +478,101 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    三角関数
+  </a>
+  
+    <nav class="md-nav" aria-label="三角関数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    加法定理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    複素線積分
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            複素線積分
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_complex_integrals/010_holomorphic_function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    複素線積分
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -553,6 +646,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    三角関数
+  </a>
+  
+    <nav class="md-nav" aria-label="三角関数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    加法定理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -575,28 +695,36 @@
 <p class="admonition-title">定義(指数関数)</p>
 <p>複素数 <span class="arithmatex">\(z = x + iy\)</span> に対して、
 $$\exp(z) := e^x (\cos y + i \sin y) $$
-とおく。</p>
+とおく。<span class="arithmatex">\(\exp(z)\)</span> のことを <span class="arithmatex">\(e^z\)</span> とも書く。</p>
 </div>
 <p><span class="arithmatex">\(y = 0\)</span> であれば右辺は
 $$e^x (\cos y + i \sin y) = e^x (1 + i \cdot 0) = e^x $$
 だから、実数に対してはもともと知っている指数関数と一致している。</p>
-<div class="admonition remark">
-<p class="admonition-title">注意</p>
-<p><span class="arithmatex">\(\exp(z)\)</span> のことを <span class="arithmatex">\(e^z\)</span> とも書く。ここでは、新しく定義した関数であることを強調するために別の記号を用いた。</p>
-</div>
 <p>この定義だけ見てもなぜこの定義なのかは分かりづらいが、このように定義しておくと以下に見るように様々な性質が成り立つ。</p>
 <h3 id="_3">指数法則</h3>
 <div class="admonition proposition">
 <p class="admonition-title">命題</p>
-<p><span class="arithmatex">\(z, w \in \mathbb{C}\)</span>に対して、<span class="arithmatex">\(\exp(z+w) = \exp(z) \cdot \exp(w)\)</span> である。</p>
+<p>(1) <span class="arithmatex">\(z, w \in \mathbb{C}\)</span>に対して、<span class="arithmatex">\(\exp(z+w) = \exp(z) \cdot \exp(w)\)</span> である。</p>
+<p>(2) <span class="arithmatex">\(z \in \mathbb{C}\)</span> と <span class="arithmatex">\(n \in \mathbb{N}\)</span> に対して、<span class="arithmatex">\(\exp(nz) = (\exp(z))^n\)</span> である。</p>
 </div>
 <p><strong>証明</strong>
-<span class="arithmatex">\(z=x+iy\)</span>, <span class="arithmatex">\(w=\xi + i \eta\)</span> とおく。計算すると、</p>
+(1) <span class="arithmatex">\(z=x+iy\)</span>, <span class="arithmatex">\(w=\xi + i \eta\)</span> とおく。計算すると、</p>
 <div class="arithmatex">\[\begin{align*}\exp(z+w) &amp;= e^{x+\xi} (\cos(y + \eta) + i \sin(y + \eta))\\
 &amp;= e^{x+\xi}(\cos y \cos \eta - \sin y \sin \eta + i \sin y \cos \eta + i \cos y \sin \eta)\\
 &amp;= e^x e^{\xi}(\cos y + i \sin y)(\cos \eta + i \sin \eta)\\
 &amp;= \exp(z) \exp(w)\end{align*}\]</div>
-<p>であることがわかる。<span class="arithmatex">\(\square\)</span></p>
+<p>であることがわかる。</p>
+<p>(2) (自然数を何から始めることにするのかちゃんと考えていなかった。とりあえず <span class="arithmatex">\(n=0\)</span> から示す)</p>
+<p><span class="arithmatex">\(n=0\)</span> のときは、<span class="arithmatex">\(\exp(0\cdot z) = 1 = \exp(z)^0\)</span> なので成り立つ。</p>
+<p><span class="arithmatex">\(n-1\)</span> で正しいとすると、</p>
+<div class="arithmatex">\[\begin{align*}
+\exp(nz) &amp;= \exp((n-1)z + z)\\
+&amp;=\exp((n-1)z) \exp(z) &amp;(←(1)より)\\
+&amp;=(\exp(z))^{n-1} \exp(z)\\
+&amp;=(\exp(z))^n
+\end{align*} \]</div>
+<p>となり、<span class="arithmatex">\(n\)</span>でも成り立つ。
+<span class="arithmatex">\(\square\)</span></p>
 <h3 id="exp"><span class="arithmatex">\(\exp\)</span> の正則性</h3>
 <div class="admonition proposition">
 <p class="admonition-title">命題</p>
@@ -619,6 +747,44 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},\,\,\,\, \frac{\
 &amp;= \frac{\partial}{\partial x}(e^x (\cos y + i \sin y)) \\
 &amp;= e^x(\cos y + i \sin y) = \exp(z)\end{align*}\]</div>
 <p>を得る。(この説明ちょっと微妙な気がしてきたのでもう少し考える)</p>
+<h2 id="_4">三角関数</h2>
+<p>指数関数の定義で <span class="arithmatex">\(x=0\)</span> とおくと、<strong>Eulerの公式</strong>
+$$\exp(iy) = \cos y + i\sin y $$
+を得る。さらに、ここで <span class="arithmatex">\(y\)</span> を <span class="arithmatex">\(-y\)</span> で置き換えると、
+$$\exp(-iy) = \cos y - i \sin y $$
+となる。これらの式を組み合わせると、
+$$\cos y = \frac{\exp(iy) + \exp(-iy)}{2}, $$
+$$\sin y = \frac{\exp(iy) - \exp(-iy)}{2i} $$
+という表示を得ることができる。これは <span class="arithmatex">\(y\)</span> が実数であるときの式だが、この式を元に次のように複素数に対する三角関数を定義する：</p>
+<div class="admonition definition">
+<p class="admonition-title">定義</p>
+<p>複素数 <span class="arithmatex">\(z\)</span> に対して、
+$$\cos z = \frac{\exp(iz) + \exp(-iz)}{2}, $$
+$$\sin z = \frac{\exp(iz) - \exp(-iz)}{2i} $$
+と定める。</p>
+</div>
+<p><span class="arithmatex">\(\exp\)</span> が正則関数だったこと(と、正則関数の和・差・積や合成も正則になること)から、<span class="arithmatex">\(\cos\)</span>, <span class="arithmatex">\(\sin\)</span> も正則関数になる。
+複素微分を計算すると、
+$$(\cos z)' = \frac{i\exp(iz) + (-i)\exp(-iz)}{2} = \frac{-\exp(iz) +\exp(-iz)}{2i} = -\sin z, $$
+$$(\sin z)' = \frac{i\exp(iz) - (-i)\exp(-iz)}{2i} = \frac{\exp(iz) +\exp(-iz)}{2} = \cos z $$
+となる。これは、実数に対する三角関数の微分と一致している。</p>
+<h3 id="_5">加法定理</h3>
+<p>三角関数の色々な性質も実数の場合と同様に成り立つものが多い。ここでは、例として加法定理を挙げる。</p>
+<div class="admonition proposition">
+<p class="admonition-title">命題</p>
+<p>複素数 <span class="arithmatex">\(z, w\)</span> に対して、以下が成り立つ：
+$$\cos(z+w) = \cos z \cos w - \sin z \sin w, $$
+$$\sin(z+w) = \sin z \cos w + \cos z \sin w $$</p>
+</div>
+<p>証明は、定義をもとに <span class="arithmatex">\(\exp\)</span> に直して指数法則を適用することで行う。(後で書く/計算練習としてやってみてください！！)</p>
+<h2 id="_6">まとめ</h2>
+<div class="admonition summary">
+<p class="admonition-title">まとめ</p>
+<ul>
+<li>実数に対する指数関数・三角関数の定義を複素数まで拡張し、<span class="arithmatex">\(\mathbb{C}\)</span> 上の正則関数を得た。</li>
+<li>実数における性質と類似の性質を紹介した。</li>
+</ul>
+</div>
 
 
 
