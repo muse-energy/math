@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/complex_analysis/">
+        <link rel="canonical" href="https://example.com/complex_analysis/01_holomorphic_functions/035_composition/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../030_cauchy-riemann/">
       
       
-        <link rel="next" href="00_complex_numbers/complex_conjugate/">
+        <link rel="next" href="../040_exp_and_trigonometric_functinos/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
     
     
       
-        <title>はじめに - 数学メモ</title>
+        <title>合成関数の微分 - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -50,9 +50,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../../../stylesheets/theorems.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -93,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              はじめに
+              合成関数の微分
             
           </span>
         </div>
@@ -150,7 +150,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -167,7 +167,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -222,18 +222,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -242,7 +233,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -290,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00_complex_numbers/complex_conjugate/" class="md-nav__link">
+      <a href="../../00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,18 +306,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -341,7 +333,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             正則関数
@@ -354,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
+      <a href="../010_holomorphic_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -374,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
+      <a href="../020_linear_approximation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -394,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
+      <a href="../030_cauchy-riemann/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,9 +404,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="01_holomorphic_functions/035_composition/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -423,6 +424,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -434,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
+      <a href="../040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02_complex_integrals/010_holomorphic_function/" class="md-nav__link">
+      <a href="../../02_complex_integrals/010_holomorphic_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -560,8 +562,13 @@
                   
 
 
-<h1 id="_1">はじめに</h1>
-<p>勉強会で複素解析の講義をしたときのノートをまとめます。</p>
+<h1 id="_1">合成関数の微分</h1>
+<p>複素微分についても、実関数のときと同様の合成関数の微分の公式が成り立つことを確かめる。</p>
+<div class="admonition proposition">
+<p class="admonition-title">命題</p>
+<p><span class="arithmatex">\(\Omega_1, \Omega_2 \subset \mathbb{C}\)</span> を領域として、<span class="arithmatex">\(f: \Omega_1 \to \Omega_2\)</span>, <span class="arithmatex">\(g: \Omega_2 \to \mathbb{C}\)</span> とする。<span class="arithmatex">\(z \in \Omega_1\)</span> に対して、<span class="arithmatex">\(f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能、<span class="arithmatex">\(g\)</span> は <span class="arithmatex">\(f(z)\)</span> において複素微分可能であるとする。このとき、合成関数 <span class="arithmatex">\(g \circ f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能である。</p>
+</div>
+<p>ここで、合成関数 <span class="arithmatex">\(g \circ f\)</span> は、<span class="arithmatex">\((g \circ f)(z) := g(f(z))\)</span> により定まる関数である。</p>
 
 
 
@@ -600,12 +607,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
