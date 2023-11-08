@@ -39,6 +39,18 @@
     background-color: rgb(43, 155, 70);
   }
 
+  .md-typeset .admonition.lemma,
+  .md-typeset details.lemma {
+    border-color: rgb(43, 155, 70);
+  }
+  .md-typeset .lemma > .admonition-title,
+  .md-typeset .lemma > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+  .md-typeset .lemma > .admonition-title::before,
+  .md-typeset .lemma > summary::before {
+    background-color: rgb(43, 155, 70);
+  }
   .md-typeset .admonition.definition,
   .md-typeset details.definition {
     border-color: rgb(250, 140, 140);

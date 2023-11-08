@@ -563,12 +563,64 @@
 
 
 <h1 id="_1">合成関数の微分</h1>
-<p>複素微分についても、実関数のときと同様の合成関数の微分の公式が成り立つことを確かめる。</p>
+<p>複素微分についても合成関数の微分の公式が成り立つ。</p>
 <div class="admonition proposition">
 <p class="admonition-title">命題</p>
-<p><span class="arithmatex">\(\Omega_1, \Omega_2 \subset \mathbb{C}\)</span> を領域として、<span class="arithmatex">\(f: \Omega_1 \to \Omega_2\)</span>, <span class="arithmatex">\(g: \Omega_2 \to \mathbb{C}\)</span> とする。<span class="arithmatex">\(z \in \Omega_1\)</span> に対して、<span class="arithmatex">\(f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能、<span class="arithmatex">\(g\)</span> は <span class="arithmatex">\(f(z)\)</span> において複素微分可能であるとする。このとき、合成関数 <span class="arithmatex">\(g \circ f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能である。</p>
+<p><span class="arithmatex">\(\Omega_1, \Omega_2 \subset \mathbb{C}\)</span> を領域として、<span class="arithmatex">\(f: \Omega_1 \to \Omega_2\)</span>, <span class="arithmatex">\(g: \Omega_2 \to \mathbb{C}\)</span> とする。<span class="arithmatex">\(z \in \Omega_1\)</span> に対して、<span class="arithmatex">\(f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能、<span class="arithmatex">\(g\)</span> は <span class="arithmatex">\(f(z)\)</span> において複素微分可能であるとする。このとき、合成関数 <span class="arithmatex">\(g \circ f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能であり、
+$$(g \circ f)' (z) = g'(f(z)) f'(z) $$
+が成り立つ。</p>
 </div>
 <p>ここで、合成関数 <span class="arithmatex">\(g \circ f\)</span> は、<span class="arithmatex">\((g \circ f)(z) := g(f(z))\)</span> により定まる関数である。</p>
+<p>合成関数の微分は、気持ちとしては、</p>
+<ul>
+<li>関数 <span class="arithmatex">\(f\)</span> によって <span class="arithmatex">\(z\)</span> の周りが <span class="arithmatex">\(f'(z)\)</span> 倍される</li>
+<li>関数 <span class="arithmatex">\(g\)</span> によって <span class="arithmatex">\(f(z)\)</span> の周りが <span class="arithmatex">\(g'(f(z))\)</span> 倍される</li>
+<li>したがって、<span class="arithmatex">\(f\)</span> と <span class="arithmatex">\(g\)</span> を続けて当てると <span class="arithmatex">\(z\)</span> の周りが <span class="arithmatex">\(g'(f(z)) \cdot f'(z)\)</span> 倍される</li>
+</ul>
+<p>ということを言っている。</p>
+<p>(以下の証明も基本的にこの説明と同じ筋ではあると思うんですけど、かなり大変なので、<span class="arithmatex">\(\epsilon\)</span>-<span class="arithmatex">\(\delta\)</span> による極限の定義に慣れてない人は飛ばしても良いと思います。こんなに大変じゃなくてもいいと思うんですけど……)</p>
+<p>証明の前に、次の補題を用意する：</p>
+<div class="admonition lemma">
+<p class="admonition-title">補題</p>
+<p><span class="arithmatex">\(\Omega \subset \mathbb{C}\)</span> を領域として、<span class="arithmatex">\(f: \Omega \to \mathbb{C}\)</span> を関数とする。<span class="arithmatex">\(f\)</span> が <span class="arithmatex">\(z \in \Omega\)</span> において複素微分可能であるとする。このとき、ある <span class="arithmatex">\(C &gt; 0\)</span> と <span class="arithmatex">\(\epsilon&gt;0\)</span> が存在して、<span class="arithmatex">\(|\Delta z|&lt; \epsilon\)</span>のとき、
+$$|f(z+\Delta z) - f(z)|  \leq C|\Delta z| $$
+が成り立つ。</p>
+</div>
+<p><strong>証明</strong>
+<span class="arithmatex">\(f\)</span> が <span class="arithmatex">\(z\)</span> において複素微分可能だから、
+$$f(w) = f(z) + f'(z)(w-z) + r(w) $$
+と書いたとき、
+$$\lim_{w \to z} \frac{|r(w)|}{|w-z|} = 0 $$
+である。特に、ある <span class="arithmatex">\(\epsilon&gt;0\)</span> が存在して、<span class="arithmatex">\(|w-z| &lt; \epsilon\)</span> のとき <span class="arithmatex">\(\displaystyle\frac{|r(w)|}{|w-z|} &lt; 1\)</span> となる。すると、<span class="arithmatex">\(|w-z| &lt; \epsilon\)</span> のとき、</p>
+<div class="arithmatex">\[\begin{align*}|f(w) - f(z)| &amp;= |f'(z)(w-z) + r(w)|\\
+&amp;\leq |f'(z)(w-z)| + |r(w)| \\
+&amp;\leq |f'(z)||w-z| + |w-z|\\
+&amp;= (|f'(z)| + 1) |w-z|\end{align*}\]</div>
+<p>である。<span class="arithmatex">\(C := |f'(z)| + 1\)</span> とおいて <span class="arithmatex">\(w-z = \Delta z\)</span> と書くと結論が得られる。<span class="arithmatex">\(\square\)</span></p>
+<p><strong>命題の証明</strong>
+<span class="arithmatex">\(f\)</span> と <span class="arithmatex">\(g\)</span> の一次近似の式をそれぞれ書くと、
+$$f(z + \Delta z) = f(z) + f'(z)\Delta z + r_f(z + \Delta z) $$
+$$g(w + \Delta w) = g(w) + g'(w)\Delta w + r_g(w + \Delta w) $$
+となる。<span class="arithmatex">\(w = f(z)\)</span>, <span class="arithmatex">\(\Delta w = f(z + \Delta z) - f(z)\)</span> をそれぞれ代入して、</p>
+<div class="arithmatex">\[\begin{align*}
+g(f(z + \Delta z)) &amp;= g(f(z)) + g'(f(z)) (f(z+\Delta z) - f(z)) + r_g(w+\Delta w) \\
+&amp;= g(f(z)) + g'(f(z))(f'(z) \Delta z + r_f(z+\Delta z)) + r_g(w + \Delta w) \\
+&amp;= g(f(z)) + g'(f(z)) f'(z) \Delta z + g'(f(z)) r_f(z + \Delta z) + r_g (w + \Delta w) 
+\end{align*}
+\]</div>
+<p>となる。<span class="arithmatex">\(r_f\)</span> の項が <span class="arithmatex">\(o(\Delta z)\)</span> であることはすでに分かっている。以下、<span class="arithmatex">\(r_g\)</span> の項をチェックする。</p>
+<p>補題より、ある $C &gt; 0 $ と <span class="arithmatex">\(\epsilon&gt;0\)</span> が存在して、<span class="arithmatex">\(|\Delta z| &lt; \epsilon\)</span> のとき
+$$|f(z + \Delta z) - f(z)| \leq C |\Delta z| $$
+が成り立つ。
+<span class="arithmatex">\(f(z + \Delta z) -f(z) = \Delta w\)</span> と書くと、<span class="arithmatex">\(|\Delta z| &lt; \epsilon\)</span> のとき
+$$|\Delta w| \leq C |\Delta z| $$
+となる。</p>
+<p><span class="arithmatex">\(\epsilon'&gt;0\)</span> を任意にとって固定する。<span class="arithmatex">\(r_g\)</span> が <span class="arithmatex">\(o(\Delta w)\)</span> だったので、ある <span class="arithmatex">\(\delta&gt;0\)</span> が存在して、 <span class="arithmatex">\(|\Delta w| &lt; \delta\)</span> のとき <span class="arithmatex">\(|r_g(w + \Delta w)| \leq \epsilon' |\Delta w|\)</span> が成り立つ。すると、<span class="arithmatex">\(|\Delta z| &lt; \min(\epsilon, \frac{\delta}{C})\)</span> のとき、<span class="arithmatex">\(|\Delta w| \leq C |\Delta z| \leq \delta\)</span> となるので、
+$$|r_g(w + \Delta w)| \leq \epsilon' |\Delta w| \leq \epsilon' C |\Delta z| $$
+である。<span class="arithmatex">\(\epsilon'\)</span> は任意なので、これで
+$$\lim_{\Delta z \to 0}\frac{|r_g(w + \Delta w)|}{|\Delta z|}= 0 $$
+であることがわかる。</p>
+<p>以上により、<span class="arithmatex">\(g\circ f\)</span> の <span class="arithmatex">\(z\)</span> における一次近似の式が得られたので、<span class="arithmatex">\(g \circ f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能である。また、その微分係数が <span class="arithmatex">\(g'(f(z)) f'(z)\)</span> であることがわかる。<span class="arithmatex">\(\square\)</span></p>
 
 
 
