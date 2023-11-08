@@ -427,13 +427,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    合成関数の微分
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     まとめ
   </a>
   
@@ -498,7 +505,7 @@
         
   
   <span class="md-ellipsis">
-    合成関数の微分
+    合成関数の微分の公式の証明
   </span>
   
 
@@ -669,13 +676,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    合成関数の微分
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     まとめ
   </a>
   
@@ -807,7 +821,23 @@ $$ (1/f)' = f'/f^2 $$
 =&amp; \lim_{w\to z} \frac{f(z)-f(w)}{f(w)f(z)(w-z)}\\
 =&amp; -\frac{f'(z)}{f(z)^2}\end{align*} \]</div>
 <p>より、<span class="arithmatex">\(1/g\)</span> は正則であることがわかる。<span class="arithmatex">\(\square\)</span></p>
-<h2 id="_7">まとめ</h2>
+<h3 id="_7">合成関数の微分</h3>
+<p>複素微分についても合成関数の微分の公式が成り立つ。</p>
+<div class="admonition proposition">
+<p class="admonition-title">命題</p>
+<p><span class="arithmatex">\(\Omega_1, \Omega_2 \subset \mathbb{C}\)</span> を領域として、<span class="arithmatex">\(f: \Omega_1 \to \Omega_2\)</span>, <span class="arithmatex">\(g: \Omega_2 \to \mathbb{C}\)</span> とする。<span class="arithmatex">\(z \in \Omega_1\)</span> に対して、<span class="arithmatex">\(f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能、<span class="arithmatex">\(g\)</span> は <span class="arithmatex">\(f(z)\)</span> において複素微分可能であるとする。このとき、合成関数 <span class="arithmatex">\(g \circ f\)</span> は <span class="arithmatex">\(z\)</span> において複素微分可能であり、
+$$(g \circ f)' (z) = g'(f(z)) f'(z) $$
+が成り立つ。</p>
+</div>
+<p>ここで、合成関数 <span class="arithmatex">\(g \circ f\)</span> は、<span class="arithmatex">\((g \circ f)(z) := g(f(z))\)</span> により定まる関数である。</p>
+<p>合成関数の微分は、気持ちとしては、</p>
+<ul>
+<li>関数 <span class="arithmatex">\(f\)</span> によって <span class="arithmatex">\(z\)</span> の周りが <span class="arithmatex">\(f'(z)\)</span> 倍される</li>
+<li>関数 <span class="arithmatex">\(g\)</span> によって <span class="arithmatex">\(f(z)\)</span> の周りが <span class="arithmatex">\(g'(f(z))\)</span> 倍される</li>
+<li>したがって、<span class="arithmatex">\(f\)</span> と <span class="arithmatex">\(g\)</span> を続けて当てると <span class="arithmatex">\(z\)</span> の周りが <span class="arithmatex">\(g'(f(z)) \cdot f'(z)\)</span> 倍される</li>
+</ul>
+<p>ということを言っている。証明は(自分で書いてみたらかなり大変になったので)別のページに書くが、飛ばしても良いと思う。</p>
+<h2 id="_8">まとめ</h2>
 <div class="admonition summary">
 <p class="admonition-title">まとめ</p>
 <ul>
