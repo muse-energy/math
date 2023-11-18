@@ -12,7 +12,7 @@ $$\lim_{w \to z} \frac{|r(w)|}{|w-z|} = 0 $$
 !!! proposition "命題"
     $\Omega$ を領域とし、$f : \Omega \to \mathbb{C}$ を関数とする。また、$z \in \mathbb{C}$ とする。このとき、以下は同値である：
     
-    (1) $z$ において、$f$ は複素微分可能である。すなわち、極限
+    (1) $f$ は $z$ において複素微分可能である。すなわち、極限
 
     $$\lim_{w \in \Omega \setminus \{z\}, w \to z} \frac{f(w) - f(z)}{w-z} $$
 
