@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/complex_analysis/00_complex_numbers/complex_conjugate/">
+        <link rel="canonical" href="https://example.com/miscellaneous/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../complex_analysis/02_complex_integrals/010_line_integrals/">
       
       
-        <link rel="next" href="../../01_holomorphic_functions/010_holomorphic_function/">
+        <link rel="next" href="diff_geom/connection/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
     
     
       
-        <title>複素共役 - 数学メモ</title>
+        <title>はじめに - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bd3936ea.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -50,9 +50,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../stylesheets/theorems.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -93,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href=".." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              複素共役
+              はじめに
             
           </span>
         </div>
@@ -150,7 +150,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href=".." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -167,7 +167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -184,20 +184,18 @@
       
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -211,7 +209,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             複素解析
@@ -224,7 +222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../complex_analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -242,20 +240,18 @@
                 
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -269,7 +265,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             複素数
@@ -280,18 +276,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -300,7 +287,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -356,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
+      <a href="../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -376,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
+      <a href="../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -396,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
+      <a href="../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -416,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_holomorphic_functions/035_composition/" class="md-nav__link">
+      <a href="../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -436,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
+      <a href="../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02_complex_integrals/010_line_integrals/" class="md-nav__link">
+      <a href="../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -533,18 +519,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -558,7 +546,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             雑多なこと
@@ -569,9 +557,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../miscellaneous/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -580,6 +577,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -627,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/diff_geom/connection/" class="md-nav__link">
+      <a href="diff_geom/connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -689,38 +687,8 @@
                   
 
 
-<h1 id="_1">複素共役</h1>
-<p>複素数 <span class="arithmatex">\(z = x+iy\)</span> に対して、<span class="arithmatex">\(\overline{z} := x - iy\)</span> とおき、これを <span class="arithmatex">\(z\)</span> の <strong>複素共役</strong> という。</p>
-<div class="admonition theorem">
-<p class="admonition-title">補題</p>
-<p><span class="arithmatex">\(z, w \in \mathbb{C}\)</span> に対して、以下が成り立つ：</p>
-<p>(1) <span class="arithmatex">\(\overline{z+w} = \overline{z} + \overline{w}\)</span></p>
-<p>(2) <span class="arithmatex">\(\overline{zw} = \overline{z} \cdot \overline{w}\)</span></p>
-</div>
-<p><strong>証明</strong> <span class="arithmatex">\(z = a+bi\)</span>, <span class="arithmatex">\(w=c+di\)</span> とおく。</p>
-<p>(1) <span class="arithmatex">\(\overline{z+w} = \overline{a+bi + c+di} = (a+c) - (b+d)i = (a-bi) + (c-di) = \overline{z} + \overline{w}\)</span> となる。</p>
-<p>(2) <span class="arithmatex">\(\overline{zw} = \overline{(a+bi)(c+di)} = \overline{(ac-bd) + (ad+bc)i} = (ac-bd)-(ad+bc)i = (a-bi)(c-di) = \overline{z}\cdot \overline{w}\)</span>となる。<span class="arithmatex">\(\square\)</span></p>
-<p>補題を元に、以下を証明する：</p>
-<div class="admonition theorem">
-<p class="admonition-title">定理</p>
-<p><span class="arithmatex">\(f\)</span> を実数係数の多項式とする。このとき、任意の複素数 <span class="arithmatex">\(z \in \mathbb{C}\)</span> に対して、
-$$\overline{f(z)} = f(\overline{z}) $$
-が成り立つ。</p>
-</div>
-<p><strong>証明</strong> まず、 <span class="arithmatex">\(f(z) = z^n\)</span> の場合に <span class="arithmatex">\(n\)</span> に関する帰納法で示す。(<span class="arithmatex">\(0, 1 \in \mathbb{R}\)</span> だから、これは実数係数の多項式であることを一応注意しておく。)</p>
-<p><span class="arithmatex">\(n=0\)</span> ならば、<span class="arithmatex">\(f(z) = 1\)</span> だから、<span class="arithmatex">\(\overline{f(z)} = \overline{1} = 1 = f(\overline{z})\)</span> である。</p>
-<p><span class="arithmatex">\(n-1\)</span> で成り立つとすると、補題(2)より、<span class="arithmatex">\(\overline{f(z)} = \overline{z \cdot z^{n-1}} = \overline{z} \cdot \overline{z^{n-1}}= \overline{z} \cdot \overline{z}^{n-1} = \overline{z}^n\)</span> が成り立つ。これにより、<span class="arithmatex">\(f(z) = z^n\)</span> の場合に成立することが示された。</p>
-<p>つぎに、<span class="arithmatex">\(f(z) = a_n z^n\)</span> が単項式である場合に示す。このときは、補題(2)と今示したことから、
-$$\overline{f(z)} = \overline{a_n z^n} = \overline{a_n} \overline{z^n} = a_n \overline{z}^n = f(\overline{z}) $$
-が成り立つ。</p>
-<p>最後に、<span class="arithmatex">\(f(z) = \sum_{i=0}^n a_i z^i\)</span> が一般の多項式の場合に <span class="arithmatex">\(n\)</span> に関する帰納法で示す。</p>
-<p><span class="arithmatex">\(n=0\)</span> のときは、<span class="arithmatex">\(f(z) = a_0\)</span> は定数項しかもたない。このときは、<span class="arithmatex">\(\overline{f(z)} = \overline{a_0} = a_0 = f(\overline{z})\)</span> である。</p>
-<p><span class="arithmatex">\(n-1\)</span> で成り立つとすると、補題(1)と単項式の場合に示したことから、</p>
-<div class="arithmatex">\[ \begin{align*}\overline{f(z)} &amp;= \overline{a_n z^n + (a_{n-1} z^{n-1} + \cdots + a_0)} \\
-&amp;= \overline{a_n z^n} + \overline{a_{n-1} z^{n-1} + \cdots + a_0} \\
-&amp;= a_n \overline{z}^n + a_{n-1}\overline{z}^{n-1} + \cdots + a_0 \\
-&amp;= f(\overline{z})\end{align*} \]</div>
-<p>が成り立つ。これで全ての場合が証明された。<span class="arithmatex">\(\square\)</span></p>
+<h1 id="_1">はじめに</h1>
+<p>好きなことを好きに書くための場所です。まとまってきたら適切に移したいですね。</p>
 
 
 
@@ -759,12 +727,12 @@ $$\overline{f(z)} = \overline{a_n z^n} = \overline{a_n} \overline{z^n} = a_n \ov
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="../assets/javascripts/bundle.94c44541.min.js"></script>
       
-        <script src="../../../javascripts/katex.js"></script>
+        <script src="../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
