@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/">
+        <link rel="canonical" href="https://example.com/logic_and_sets/01-propositions/">
       
       
-        <link rel="prev" href="../035_composition/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../02_complex_integrals/010_line_integrals/">
+        <link rel="next" href="../02-logical_operations/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
     
     
       
-        <title>指数関数と三角関数 - 数学メモ</title>
+        <title>命題 - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bd3936ea.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -50,9 +50,9 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../../stylesheets/theorems.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -93,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              指数関数と三角関数
+              命題
             
           </span>
         </div>
@@ -150,7 +150,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -165,18 +165,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -190,7 +192,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             論理と集合
@@ -203,7 +205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logic_and_sets/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -221,9 +223,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../logic_and_sets/01-propositions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -232,6 +243,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -243,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logic_and_sets/02-logical_operations/" class="md-nav__link">
+      <a href="../02-logical_operations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,7 +318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../real_calculus/" class="md-nav__link">
+      <a href="../../real_calculus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -362,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
+      <a href="../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../real_calculus/real_number/real_number/" class="md-nav__link">
+      <a href="../../real_calculus/real_number/real_number/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,20 +427,18 @@
       
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -442,7 +452,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             複素解析
@@ -455,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../complex_analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00_complex_numbers/complex_conjugate/" class="md-nav__link">
+      <a href="../../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,20 +547,18 @@
                 
   
   
-    
-  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -564,7 +572,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             正則関数
@@ -577,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../010_holomorphic_function/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -597,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../020_linear_approximation/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../030_cauchy-riemann/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../035_composition/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,29 +663,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    指数関数と三角関数
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,80 +674,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    指数関数
-  </a>
-  
-    <nav class="md-nav" aria-label="指数関数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    指数法則
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exp" class="md-nav__link">
-    \(\exp\) の正則性
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    三角関数
-  </a>
-  
-    <nav class="md-nav" aria-label="三角関数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    加法定理
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    まとめ
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -815,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02_complex_integrals/010_line_integrals/" class="md-nav__link">
+      <a href="../../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/" class="md-nav__link">
+      <a href="../../miscellaneous/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/diff_geom/connection/" class="md-nav__link">
+      <a href="../../miscellaneous/diff_geom/connection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -962,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
+      <a href="../../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1011,68 +925,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    指数関数
-  </a>
-  
-    <nav class="md-nav" aria-label="指数関数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    指数法則
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exp" class="md-nav__link">
-    \(\exp\) の正則性
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    三角関数
-  </a>
-  
-    <nav class="md-nav" aria-label="三角関数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    加法定理
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    まとめ
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1086,102 +938,45 @@
                   
 
 
-<h1 id="_1">指数関数と三角関数</h1>
-<p>正則関数の例として、複素数に対して指数関数・三角関数を定義する。これらの関数の定義にはいろいろな流儀があると思うが、ここでは実数に対する指数関数・三角関数の定義や性質をすでに知っているものとして、それを利用して複素数に対する定義を行うことにする。</p>
-<h2 id="_2">指数関数</h2>
-<div class="admonition definition">
-<p class="admonition-title">定義(指数関数)</p>
-<p>複素数 <span class="arithmatex">\(z = x + iy\)</span> に対して、
-$$\exp(z) := e^x (\cos y + i \sin y) $$
-とおく。<span class="arithmatex">\(\exp(z)\)</span> のことを <span class="arithmatex">\(e^z\)</span> とも書く。</p>
+<h1 id="_1">命題</h1>
+<p>正しいか正しくないかのどちらかであるような数学的主張(文章や数式)のことを、<strong>命題</strong>という。
+主張が正しいとき、その命題は<strong>真</strong>であるという。主張が正しくないとき、その命題は<strong>偽</strong>であるという。命題の真偽のことを、命題の<strong>真理値</strong>ともいう。
+「真」のことを「<span class="arithmatex">\(\mathsf{True}\)</span>」「T」「<span class="arithmatex">\(\top\)</span>」とも表す。また、「偽」のことを「<span class="arithmatex">\(\mathsf{False}\)</span>」「F」「<span class="arithmatex">\(\perp\)</span>」とも表す。</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>命題の例を挙げる。</p>
+<ol>
+<li>「<span class="arithmatex">\(4\)</span> は <span class="arithmatex">\(2\)</span> の倍数である」は命題である。この命題の真理値は真である。</li>
+<li>「<span class="arithmatex">\(16\)</span> は <span class="arithmatex">\(3\)</span> の倍数である」は命題である。この命題の真理値は偽である。</li>
+<li>「<span class="arithmatex">\(2+2=5\)</span>」は命題である。この命題の真理値は偽である。</li>
+<li>「<span class="arithmatex">\(0 \leq 1\)</span>」は命題である。この命題の真理値は真である。</li>
+</ol>
 </div>
-<p><span class="arithmatex">\(y = 0\)</span> であれば右辺は
-$$e^x (\cos y + i \sin y) = e^x (1 + i \cdot 0) = e^x $$
-だから、実数に対してはもともと知っている指数関数と一致している。</p>
-<p>この定義だけ見てもなぜこの定義なのかは分かりづらいが、このように定義しておくと以下に見るように様々な性質が成り立つ。</p>
-<h3 id="_3">指数法則</h3>
-<div class="admonition proposition">
-<p class="admonition-title">命題</p>
-<p>(1) <span class="arithmatex">\(z, w \in \mathbb{C}\)</span>に対して、<span class="arithmatex">\(\exp(z+w) = \exp(z) \cdot \exp(w)\)</span> である。</p>
-<p>(2) <span class="arithmatex">\(z \in \mathbb{C}\)</span> と <span class="arithmatex">\(n \in \mathbb{N}\)</span> に対して、<span class="arithmatex">\(\exp(nz) = (\exp(z))^n\)</span> である。</p>
+<p>命題の真理値は、必ずしも現実的に確かめられるわけではない。例えば、「差が <span class="arithmatex">\(2\)</span> であるような素数のペアが無限に存在する」という主張は命題だが、その真偽は(2024年1月現在)確かめられていない。</p>
+<p>命題ではないものの例をいくつか挙げる：</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>「<span class="arithmatex">\(2+2\)</span>」は命題ではない。なぜなら、「<span class="arithmatex">\(2+2\)</span>」という式は <span class="arithmatex">\(4\)</span> という値を表す式であり、真か偽かを表してはいないからである。</p>
 </div>
-<p><strong>証明</strong>
-(1) <span class="arithmatex">\(z=x+iy\)</span>, <span class="arithmatex">\(w=\xi + i \eta\)</span> とおく。計算すると、</p>
-<div class="arithmatex">\[\begin{align*}\exp(z+w) &amp;= e^{x+\xi} (\cos(y + \eta) + i \sin(y + \eta))\\
-&amp;= e^{x+\xi}(\cos y \cos \eta - \sin y \sin \eta + i \sin y \cos \eta + i \cos y \sin \eta)\\
-&amp;= e^x e^{\xi}(\cos y + i \sin y)(\cos \eta + i \sin \eta)\\
-&amp;= \exp(z) \exp(w)\end{align*}\]</div>
-<p>であることがわかる。</p>
-<p>(2) (自然数を何から始めることにするのかちゃんと考えていなかった。とりあえず <span class="arithmatex">\(n=0\)</span> から示す)</p>
-<p><span class="arithmatex">\(n=0\)</span> のときは、<span class="arithmatex">\(\exp(0\cdot z) = 1 = \exp(z)^0\)</span> なので成り立つ。</p>
-<p><span class="arithmatex">\(n-1\)</span> で正しいとすると、</p>
-<div class="arithmatex">\[\begin{align*}
-\exp(nz) &amp;= \exp((n-1)z + z)\\
-&amp;=\exp((n-1)z) \exp(z) &amp;(←(1)より)\\
-&amp;=(\exp(z))^{n-1} \exp(z)\\
-&amp;=(\exp(z))^n
-\end{align*} \]</div>
-<p>となり、<span class="arithmatex">\(n\)</span>でも成り立つ。
-<span class="arithmatex">\(\square\)</span></p>
-<h3 id="exp"><span class="arithmatex">\(\exp\)</span> の正則性</h3>
-<div class="admonition proposition">
-<p class="admonition-title">命題</p>
-<p><span class="arithmatex">\(\exp\)</span> は <span class="arithmatex">\(\mathbb{C}\)</span> 上の正則関数である。</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>数式「<span class="arithmatex">\(x&gt;0\)</span>」を考えよう。<span class="arithmatex">\(x\)</span>として具体的な数が指定されていたとすれば、「<span class="arithmatex">\(x&gt;0\)</span>」は命題となる。
+例えば <span class="arithmatex">\(x=1\)</span> を指定すると、数式は「<span class="arithmatex">\(1&gt;0\)</span>」となる。これは真の命題である。
+また、<span class="arithmatex">\(x=-1\)</span> を指定すると、数式は「<span class="arithmatex">\(-1&gt;0\)</span>」となる。これは偽の命題である。</p>
+<p>このように、数式「<span class="arithmatex">\(x&gt;0\)</span>」は <span class="arithmatex">\(x\)</span> として指定する値によって真偽が異なる。
+そのため、<span class="arithmatex">\(x\)</span> として具体的な数を指定するまでは「<span class="arithmatex">\(x&gt;0\)</span>」は命題ではないと考えることにする。
+このように、変数の値を指定すると命題になるようなもののことを、<strong>述語</strong>あるいは<strong>条件</strong>とよぶ。</p>
 </div>
-<p><strong>証明</strong>
-<span class="arithmatex">\(\exp\)</span> は実部も虚部も <span class="arithmatex">\(C^\infty\)</span> 級(すべての偏導関数が存在して連続)で、特に全微分可能である。(このあたりの事情はそのうちどこかで…)</p>
-<p>Cauchy-Riemannの方程式を確かめる。<span class="arithmatex">\(\exp(z) = u(x, y) + iv(x,y)\)</span> と書くと、
-$$u(x, y) = e^x \cos y, $$
-$$v(x, y) = e^x \sin y $$
-である。
-それぞれの偏微分を計算すると、
-$$\frac{\partial u}{\partial x} = e^x \cos y, \,\,\,\,\frac{\partial u}{\partial y} = -e^x \sin y $$
-$$\frac{\partial v}{\partial x} = e^x \sin y, \,\,\,\,\frac{\partial v}{\partial y} = e^x \cos y $$
-だから、
-$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},\,\,\,\, \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} $$
-となる。<span class="arithmatex">\(\square\)</span></p>
-<p>複素微分を計算してみよう。正則であることをすでに確かめたので、どの向きに微分を計算してもよく、例えば <span class="arithmatex">\(x\)</span> 軸方向から近づけることを考えると、</p>
-<div class="arithmatex">\[\begin{align*}\exp'(z) &amp;= \frac{\partial}{\partial x}(\exp(z))\\
-&amp;= \frac{\partial}{\partial x}(e^x (\cos y + i \sin y)) \\
-&amp;= e^x(\cos y + i \sin y) = \exp(z)\end{align*}\]</div>
-<p>を得る。(この説明ちょっと微妙な気がしてきたのでもう少し考える)</p>
-<h2 id="_4">三角関数</h2>
-<p>指数関数の定義で <span class="arithmatex">\(x=0\)</span> とおくと、<strong>Eulerの公式</strong>
-$$\exp(iy) = \cos y + i\sin y $$
-を得る。さらに、ここで <span class="arithmatex">\(y\)</span> を <span class="arithmatex">\(-y\)</span> で置き換えると、
-$$\exp(-iy) = \cos y - i \sin y $$
-となる。これらの式を組み合わせると、
-$$\cos y = \frac{\exp(iy) + \exp(-iy)}{2}, $$
-$$\sin y = \frac{\exp(iy) - \exp(-iy)}{2i} $$
-という表示を得ることができる。これは <span class="arithmatex">\(y\)</span> が実数であるときの式だが、この式を元に次のように複素数に対する三角関数を定義する：</p>
-<div class="admonition definition">
-<p class="admonition-title">定義</p>
-<p>複素数 <span class="arithmatex">\(z\)</span> に対して、
-$$\cos z = \frac{\exp(iz) + \exp(-iz)}{2}, $$
-$$\sin z = \frac{\exp(iz) - \exp(-iz)}{2i} $$
-と定める。</p>
-</div>
-<p><span class="arithmatex">\(\exp\)</span> が正則関数だったこと(と、正則関数の和・差・積や合成も正則になること)から、<span class="arithmatex">\(\cos\)</span>, <span class="arithmatex">\(\sin\)</span> も正則関数になる。
-複素微分を計算すると、
-$$(\cos z)' = \frac{i\exp(iz) + (-i)\exp(-iz)}{2} = \frac{-\exp(iz) +\exp(-iz)}{2i} = -\sin z, $$
-$$(\sin z)' = \frac{i\exp(iz) - (-i)\exp(-iz)}{2i} = \frac{\exp(iz) +\exp(-iz)}{2} = \cos z $$
-となる。これは、実数に対する三角関数の微分と一致している。</p>
-<h3 id="_5">加法定理</h3>
-<p>三角関数の色々な性質も実数の場合と同様に成り立つものが多い。ここでは、例として加法定理を挙げる。</p>
-<div class="admonition proposition">
-<p class="admonition-title">命題</p>
-<p>複素数 <span class="arithmatex">\(z, w\)</span> に対して、以下が成り立つ：
-$$\cos(z+w) = \cos z \cos w - \sin z \sin w, $$
-$$\sin(z+w) = \sin z \cos w + \cos z \sin w $$</p>
-</div>
-<p>証明は、定義をもとに <span class="arithmatex">\(\exp\)</span> に直して指数法則を適用することで行う。(後で書く/計算練習としてやってみてください！！)</p>
-<h2 id="_6">まとめ</h2>
-<div class="admonition summary">
-<p class="admonition-title">まとめ</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>数式「<span class="arithmatex">\(x+1&gt;x\)</span>」を考えよう。これは <span class="arithmatex">\(x\)</span> が具体的に指定されていないが、もし <span class="arithmatex">\(x\)</span> として特定の実数を指定したとしたら、それがどんな実数であっても「<span class="arithmatex">\(x+1&gt;x\)</span>」は真になる。
+そのため、「<span class="arithmatex">\(x+1&gt;x\)</span>」はそれ自体が真の命題に見えるかもしれない。しかし、「<span class="arithmatex">\(x+1&gt;x\)</span>」は <span class="arithmatex">\(x\)</span> を変数とする述語であり、命題ではないと考えたほうが良いだろう。</p>
+<p>これをより正確に命題として述べると、たとえば次のような形になる：</p>
 <ul>
-<li>実数に対する指数関数・三角関数の定義を複素数まで拡張し、<span class="arithmatex">\(\mathbb{C}\)</span> 上の正則関数を得た。</li>
-<li>実数における性質と類似の性質を紹介した。</li>
+<li>どんな実数 <span class="arithmatex">\(x\)</span> に対しても、<span class="arithmatex">\(x+1&gt;x\)</span> である。</li>
 </ul>
+<p>このような「どんな～に対しても」という形の命題は数学ではとても頻繁に現れるが、扱いは簡単ではない。詳しくはのちに説明する。</p>
+<p>普段の数学では、(紛らわしいのだが)「どんな実数 <span class="arithmatex">\(x\)</span> に対しても」のような部分を省略することがある。論理の部分を学んでいるときは、なるべく省略しないようにした方がよさそうである。</p>
 </div>
 
 
@@ -1221,12 +1016,12 @@ $$\sin(z+w) = \sin z \cos w + \cos z \sin w $$</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="../../assets/javascripts/bundle.94c44541.min.js"></script>
       
-        <script src="../../../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
