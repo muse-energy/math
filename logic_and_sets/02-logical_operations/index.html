@@ -304,6 +304,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    否定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    論理包含
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -989,6 +1003,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    否定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    論理包含
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1009,7 +1037,7 @@
 <h2 id="_2">論理積</h2>
 <p>命題 <span class="arithmatex">\(p\)</span> と命題 <span class="arithmatex">\(q\)</span> の<strong>論理積</strong> <span class="arithmatex">\(p \wedge q\)</span> を、以下のような真理値を持つ命題とする：</p>
 <ul>
-<li><span class="arithmatex">\(p\)</span> と <span class="arithmatex">\(q\)</span> の両方が真であるとき、<span class="arithmatex">\(p \wedge q\)</span> も真。</li>
+<li><span class="arithmatex">\(p\)</span> と <span class="arithmatex">\(q\)</span> の両方が真のとき、<span class="arithmatex">\(p \wedge q\)</span> も真。</li>
 <li>そうでないとき、<span class="arithmatex">\(p \wedge q\)</span> は偽。</li>
 </ul>
 <p><span class="arithmatex">\(p \wedge q\)</span> は、「<span class="arithmatex">\(p\)</span> かつ <span class="arithmatex">\(q\)</span>」のように読む。</p>
@@ -1045,11 +1073,10 @@
 </tr>
 </tbody>
 </table>
-<p><em>表: <span class="arithmatex">\(p \wedge q\)</span> の真理値表</em></p>
 <h2 id="_3">論理和</h2>
 <p>命題 <span class="arithmatex">\(p\)</span> と命題 <span class="arithmatex">\(q\)</span> の<strong>論理和</strong> <span class="arithmatex">\(p \vee q\)</span> を、以下のような真理値を持つ命題とする：</p>
 <ul>
-<li><span class="arithmatex">\(p\)</span> と <span class="arithmatex">\(q\)</span> のうち少なくともひとつが真であるとき、<span class="arithmatex">\(p \vee q\)</span> は真。</li>
+<li><span class="arithmatex">\(p\)</span> と <span class="arithmatex">\(q\)</span> のうち少なくともひとつが真のとき、<span class="arithmatex">\(p \vee q\)</span> は真。</li>
 <li>そうでないとき、<span class="arithmatex">\(p \vee q\)</span> は偽。</li>
 </ul>
 <p><span class="arithmatex">\(p \vee q\)</span> は、「<span class="arithmatex">\(p\)</span> または <span class="arithmatex">\(q\)</span>」のように読む。<span class="arithmatex">\(p \vee q\)</span> の真理値表は、下の表のようになる。</p>
@@ -1084,7 +1111,159 @@
 </tr>
 </tbody>
 </table>
-<p><em>表: <span class="arithmatex">\(p \vee q\)</span> の真理値表</em></p>
+<h2 id="_4">否定</h2>
+<p>命題 <span class="arithmatex">\(p\)</span> の<strong>否定</strong>を、<span class="arithmatex">\(\neg p\)</span> と記す。これは、以下のような真理値を持つ命題である：</p>
+<ul>
+<li><span class="arithmatex">\(p\)</span> が真のとき、<span class="arithmatex">\(\neg p\)</span> は偽。</li>
+<li><span class="arithmatex">\(p\)</span> が偽のとき、<span class="arithmatex">\(\neg p\)</span> は真。</li>
+</ul>
+<p><span class="arithmatex">\(\neg p\)</span> は、「<span class="arithmatex">\(p\)</span> でない」のように読む。<span class="arithmatex">\(\neg p\)</span> の真理値表は、下の表のようになる。</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(p\)</span></th>
+<th><span class="arithmatex">\(\neg p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>偽</td>
+</tr>
+<tr>
+<td>偽</td>
+<td>真</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">論理包含</h2>
+<p>命題 <span class="arithmatex">\(p\)</span> と命題 <span class="arithmatex">\(q\)</span> の<strong>論理包含</strong>を、<span class="arithmatex">\(p \to q\)</span>と記す。これは、以下のような真理値を持つ命題である：</p>
+<ul>
+<li>「<span class="arithmatex">\(p\)</span> が偽」または「<span class="arithmatex">\(q\)</span> が真」のとき、<span class="arithmatex">\(p \to q\)</span> は真。</li>
+<li>そうでないとき、<span class="arithmatex">\(p \to q\)</span> は偽。</li>
+</ul>
+<p><span class="arithmatex">\(p \to q\)</span> は、「<span class="arithmatex">\(p\)</span> ならば <span class="arithmatex">\(q\)</span>」のように読む。論理包含に対して、命題 <span class="arithmatex">\(p\)</span> を<strong>仮定</strong>、 <span class="arithmatex">\(q\)</span> を<strong>結論</strong> と呼ぶこともある。<span class="arithmatex">\(p \to q\)</span> の真理値表は、下の表のようになる。</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(p\)</span></th>
+<th><span class="arithmatex">\(q\)</span></th>
+<th><span class="arithmatex">\(p \to q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>偽</td>
+<td>偽</td>
+</tr>
+<tr>
+<td>偽</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>偽</td>
+<td>偽</td>
+<td>真</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(p\)</span> が偽のとき、<span class="arithmatex">\(q\)</span> の真偽によらず <span class="arithmatex">\(p \to q\)</span> は真の命題となることに注意しよう(こういうのをvacuous truthと呼ぶらしいです)。
+これは違和感を持たれやすいところだが、実はこうしておくと議論を進める際に都合が良い。</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>「<span class="arithmatex">\(4\)</span> の倍数は偶数である」という命題を考えよう。この命題は、より詳しく書いてみると次のようになる：</p>
+<ul>
+<li>どんな整数 <span class="arithmatex">\(n\)</span> に対しても、<span class="arithmatex">\(n\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(n\)</span> は偶数である。</li>
+</ul>
+<p>これはすなわち、以下の(無限個の)命題が真であるという意味である：</p>
+<ul>
+<li><span class="arithmatex">\(\vdots\)</span></li>
+<li><span class="arithmatex">\(-1\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(-1\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(0\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(0\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(1\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(1\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(2\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(2\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(3\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(3\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(4\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(4\)</span> は偶数である。</li>
+<li><span class="arithmatex">\(\vdots\)</span> </li>
+</ul>
+<p>それぞれの命題の真偽を整理すると、以下の表のようになる：</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(n\)</span></th>
+<th><span class="arithmatex">\(n\)</span> は <span class="arithmatex">\(4\)</span> の倍数</th>
+<th><span class="arithmatex">\(n\)</span> は偶数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(-1\)</span></td>
+<td>偽</td>
+<td>偽</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td>偽</td>
+<td>偽</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2\)</span></td>
+<td>偽</td>
+<td>真</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3\)</span></td>
+<td>偽</td>
+<td>偽</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(4\)</span></td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+<td><span class="arithmatex">\(\vdots\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>したがって、すべての <span class="arithmatex">\(n\)</span> に対して「<span class="arithmatex">\(n\)</span> が <span class="arithmatex">\(4\)</span> の倍数ならば <span class="arithmatex">\(n\)</span> は偶数」が成り立つためには、以下の3つの <span class="arithmatex">\(p\)</span> , <span class="arithmatex">\(q\)</span> の真偽の組み合わせについて、<span class="arithmatex">\(p \to q\)</span> が真でなければならない：</p>
+<ul>
+<li><span class="arithmatex">\(p\)</span>が真、 <span class="arithmatex">\(q\)</span> が真</li>
+<li><span class="arithmatex">\(p\)</span>が偽、 <span class="arithmatex">\(q\)</span> が真</li>
+<li><span class="arithmatex">\(p\)</span>が偽、 <span class="arithmatex">\(q\)</span> が偽</li>
+</ul>
+<p>このように、仮定 <span class="arithmatex">\(p\)</span> が偽のときに「<span class="arithmatex">\(p \to q\)</span>」が真であるとしておくと都合が良い。</p>
+</div>
+<ul>
+<li>いろいろな論理学をちゃんと勉強したらもうちょっと別の説明や見方もできるかもしれないですね…</li>
+<li>論理包含を表す記号として、「<span class="arithmatex">\(\to\)</span>」ではなく「<span class="arithmatex">\(\Rightarrow\)</span>」を使うことも多い気がするが、明確な違いを私は知りません。<ul>
+<li>論理学的な文脈では「<span class="arithmatex">\(\to\)</span>」をよく見る気がする。</li>
+<li>普段の数学では論理的な関係を示すために「<span class="arithmatex">\(\Rightarrow\)</span>」を使うことが多い気がする。<ul>
+<li>「したがって」といった意味の板書やノートでなんとなく矢印を使いたくなることがあるが、「<span class="arithmatex">\(\Rightarrow\)</span>」では意味が通らないときに「<span class="arithmatex">\(\rightsquigarrow\)</span>」を使うと便利なことがある。(具体例がパッと出てこない… 私はよく使います)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
