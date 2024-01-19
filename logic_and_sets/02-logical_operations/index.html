@@ -14,7 +14,7 @@
         <link rel="prev" href="../01-propositions/">
       
       
-        <link rel="next" href="../../real_calculus/">
+        <link rel="next" href="../03-sets/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -318,10 +318,37 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    命題変数、命題の同値性
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    集合
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1017,6 +1044,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    命題変数、命題の同値性
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1264,6 +1298,23 @@
 </ul>
 </li>
 </ul>
+<h2 id="_6">命題変数、命題の同値性</h2>
+<p><span class="arithmatex">\(p, q, r, \ldots\)</span> を命題とする。これらの命題と論理演算(<span class="arithmatex">\(\wedge\)</span>, <span class="arithmatex">\(\vee\)</span>, <span class="arithmatex">\(\neg\)</span>, <span class="arithmatex">\(\to\)</span> など)を組み合わせて、複雑な命題を作ることができる。例えば、
+$$(p \wedge q) \to  (r \vee \neg p) $$
+のようなものを作ることができる。(↑この式には特に深い意味はない)</p>
+<p>このとき、式全体の真理値は、式に現れる命題(ここでは <span class="arithmatex">\(p, q, r\)</span>)の真理値のみによって決まり、命題 <span class="arithmatex">\(p, q, r\)</span> の具体的な内容は関係しない。そこで、<span class="arithmatex">\(p, q, r\)</span> を「真」または「偽」の2通りの値をとる変数だと思うことができる。それぞれの命題をこのようにみなしたものを、<strong>命題変数</strong>と呼ぶことにする。</p>
+<p>命題変数 <span class="arithmatex">\(p_1,p_2, \ldots, p_n\)</span> からなる式 <span class="arithmatex">\(P\)</span>, <span class="arithmatex">\(Q\)</span> を考える。<span class="arithmatex">\(P\)</span>と<span class="arithmatex">\(Q\)</span>が<strong>同値</strong>な式であるとは、それぞれの命題変数にどのような真理値を割り当てたとしても、<span class="arithmatex">\(P\)</span>と<span class="arithmatex">\(Q\)</span>の真偽が一致することをいう。式 <span class="arithmatex">\(P\)</span> と <span class="arithmatex">\(Q\)</span> が同値なとき、<span class="arithmatex">\(P \equiv Q\)</span> と書く。</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<p>同値な式の例を挙げる。</p>
+<ol>
+<li>交換法則： <span class="arithmatex">\(p \wedge q \equiv q \wedge p\)</span>, <span class="arithmatex">\(p \vee q \equiv q \vee p\)</span></li>
+<li>結合法則： <span class="arithmatex">\((p \wedge q) \wedge r \equiv p \wedge (q \wedge r)\)</span>, <span class="arithmatex">\((p \vee q) \vee r \equiv p \vee (q \vee r)\)</span></li>
+<li>分配法則： <span class="arithmatex">\(p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r)\)</span>, <span class="arithmatex">\(p \wedge (q \vee r) \equiv (p \wedge q) \vee (p \wedge r)\)</span></li>
+<li>de Morganの法則：<span class="arithmatex">\(\neg (p \wedge q) = (\neg p) \vee (\neg q)\)</span>, <span class="arithmatex">\(\neg (p \vee q) = (\neg p) \wedge (\neg q)\)</span></li>
+</ol>
+</div>
+<p>それぞれ真理値表を書くことにより、これらの式が同値であることを確かめることができる。</p>
 
 
 
