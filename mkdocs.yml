@@ -9,6 +9,7 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - footnotes
   - admonition
   - pymdownx.details
   - pymdownx.superfences
