@@ -5,6 +5,7 @@ theme:
   name: material
   palette: 
     primary: green
+  language: ja
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -24,4 +25,9 @@ extra_css:
   - stylesheets/theorems.css
 
 plugins:
-    - awesome-pages
+  - awesome-pages
+  - search
+  - git-revision-date-localized:
+      enable: true
+      fallback_to_build_date: true
+      locale: ja
