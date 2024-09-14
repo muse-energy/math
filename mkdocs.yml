@@ -23,6 +23,7 @@ extra_javascript:
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - stylesheets/theorems.css
+  - stylesheets/custom.css
 
 plugins:
   - awesome-pages
