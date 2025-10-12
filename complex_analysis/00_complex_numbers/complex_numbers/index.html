@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/complex_analysis/00_complex_numbers/complex_conjugate/">
+        <link rel="canonical" href="https://example.com/complex_analysis/00_complex_numbers/complex_numbers/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../complex_conjugate/">
       
       
-        <link rel="next" href="../complex_numbers/">
+        <link rel="next" href="../../01_holomorphic_functions/010_holomorphic_function/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>複素共役 - 数学メモ</title>
+        <title>複素数 - 数学メモ</title>
       
     
     
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              複素共役
+              複素数
             
           </span>
         </div>
@@ -653,6 +653,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../complex_conjugate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    複素共役
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -665,31 +688,20 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   
   <span class="md-ellipsis">
-    複素共役
+    複素数
     
   </span>
   
 
-      </a>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../complex_numbers/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -700,6 +712,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      虚数単位
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1406,6 +1447,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      虚数単位
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1420,38 +1478,19 @@
 
 
 
-<h1 id="_1">複素共役</h1>
-<p>複素数 <span class="arithmatex">\(z = x+iy\)</span> に対して、<span class="arithmatex">\(\overline{z} := x - iy\)</span> とおき、これを <span class="arithmatex">\(z\)</span> の <strong>複素共役</strong> という。</p>
-<div class="admonition theorem">
-<p class="admonition-title">補題</p>
-<p><span class="arithmatex">\(z, w \in \mathbb{C}\)</span> に対して、以下が成り立つ：</p>
-<p>(1) <span class="arithmatex">\(\overline{z+w} = \overline{z} + \overline{w}\)</span></p>
-<p>(2) <span class="arithmatex">\(\overline{zw} = \overline{z} \cdot \overline{w}\)</span></p>
+<h1 id="_1">複素数</h1>
+<p>実数 <span class="arithmatex">\(x\)</span> に対して、<span class="arithmatex">\(x^2 \geq 0\)</span> が成り立つのであった。したがって、方程式
+$$ x^2 = -1 $$
+は、実数 <span class="arithmatex">\(x\)</span> に対しては解を持たない。しかし、もし仮に、2乗すると <span class="arithmatex">\(-1\)</span> になるような数を考えたとしたら、どうなるだろうか？
+実は、このようにして新しく得られる数は、大変有用であることが知られている。これから複素解析で扱う内容は、まさにその有用さの一端である。</p>
+<h2 id="_2">虚数単位</h2>
+<p>複素数を定義する方法は実はいろいろあるのだが、ここでは厳密さにこだわらず、まずは次のように説明してみる：</p>
+<div class="admonition definition">
+<p class="admonition-title">定義</p>
+<p><span class="arithmatex">\(i^2 = -1\)</span> をみたす記号 <span class="arithmatex">\(i\)</span> を用いて、<span class="arithmatex">\(a + bi\)</span> (<span class="arithmatex">\(a, b \in \mathbb{R}\)</span>)の形で書かれる数を、<strong>複素数</strong>と呼ぶ。</p>
 </div>
-<p><strong>証明</strong> <span class="arithmatex">\(z = a+bi\)</span>, <span class="arithmatex">\(w=c+di\)</span> とおく。</p>
-<p>(1) <span class="arithmatex">\(\overline{z+w} = \overline{a+bi + c+di} = (a+c) - (b+d)i = (a-bi) + (c-di) = \overline{z} + \overline{w}\)</span> となる。</p>
-<p>(2) <span class="arithmatex">\(\overline{zw} = \overline{(a+bi)(c+di)} = \overline{(ac-bd) + (ad+bc)i} = (ac-bd)-(ad+bc)i = (a-bi)(c-di) = \overline{z}\cdot \overline{w}\)</span>となる。<span class="arithmatex">\(\square\)</span></p>
-<p>補題を元に、以下を証明する：</p>
-<div class="admonition theorem">
-<p class="admonition-title">定理</p>
-<p><span class="arithmatex">\(f\)</span> を実数係数の多項式とする。このとき、任意の複素数 <span class="arithmatex">\(z \in \mathbb{C}\)</span> に対して、
-$$\overline{f(z)} = f(\overline{z}) $$
-が成り立つ。</p>
-</div>
-<p><strong>証明</strong> まず、 <span class="arithmatex">\(f(z) = z^n\)</span> の場合に <span class="arithmatex">\(n\)</span> に関する帰納法で示す。(<span class="arithmatex">\(0, 1 \in \mathbb{R}\)</span> だから、これは実数係数の多項式であることを一応注意しておく。)</p>
-<p><span class="arithmatex">\(n=0\)</span> ならば、<span class="arithmatex">\(f(z) = 1\)</span> だから、<span class="arithmatex">\(\overline{f(z)} = \overline{1} = 1 = f(\overline{z})\)</span> である。</p>
-<p><span class="arithmatex">\(n-1\)</span> で成り立つとすると、補題(2)より、<span class="arithmatex">\(\overline{f(z)} = \overline{z \cdot z^{n-1}} = \overline{z} \cdot \overline{z^{n-1}}= \overline{z} \cdot \overline{z}^{n-1} = \overline{z}^n\)</span> が成り立つ。これにより、<span class="arithmatex">\(f(z) = z^n\)</span> の場合に成立することが示された。</p>
-<p>つぎに、<span class="arithmatex">\(f(z) = a_n z^n\)</span> が単項式である場合に示す。このときは、補題(2)と今示したことから、
-$$\overline{f(z)} = \overline{a_n z^n} = \overline{a_n} \overline{z^n} = a_n \overline{z}^n = f(\overline{z}) $$
-が成り立つ。</p>
-<p>最後に、<span class="arithmatex">\(f(z) = \sum_{i=0}^n a_i z^i\)</span> が一般の多項式の場合に <span class="arithmatex">\(n\)</span> に関する帰納法で示す。</p>
-<p><span class="arithmatex">\(n=0\)</span> のときは、<span class="arithmatex">\(f(z) = a_0\)</span> は定数項しかもたない。このときは、<span class="arithmatex">\(\overline{f(z)} = \overline{a_0} = a_0 = f(\overline{z})\)</span> である。</p>
-<p><span class="arithmatex">\(n-1\)</span> で成り立つとすると、補題(1)と単項式の場合に示したことから、</p>
-<div class="arithmatex">\[ \begin{align*}\overline{f(z)} &amp;= \overline{a_n z^n + (a_{n-1} z^{n-1} + \cdots + a_0)} \\
-&amp;= \overline{a_n z^n} + \overline{a_{n-1} z^{n-1} + \cdots + a_0} \\
-&amp;= a_n \overline{z}^n + a_{n-1}\overline{z}^{n-1} + \cdots + a_0 \\
-&amp;= f(\overline{z})\end{align*} \]</div>
-<p>が成り立つ。これで全ての場合が証明された。<span class="arithmatex">\(\square\)</span></p>
+<p>複素数に関する計算をするときは、まずは <span class="arithmatex">\(i\)</span> を普通の記号 <span class="arithmatex">\(x\)</span> や <span class="arithmatex">\(y\)</span> と同じものだと思って計算する。そして、新しいルールとして <span class="arithmatex">\(i^2 = -1\)</span> を適用する。</p>
+<p>実数 <span class="arithmatex">\(a\)</span> は、<span class="arithmatex">\(a + 0i\)</span> と解釈して複素数の一種であるとみなす。また、<span class="arithmatex">\(bi\)</span> も、<span class="arithmatex">\(0 +bi\)</span> と解釈して、複素数の一種であるとみなす。</p>
 
 
 
@@ -1472,7 +1511,7 @@ $$\overline{f(z)} = \overline{a_n z^n} = \overline{a_n} \overline{z^n} = a_n \ov
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2023年11月2日 05:33:57 UTC">2023年11月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月12日 19:26:47 UTC">2025年10月12日</span>
   </span>
 
     
