@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/logic_and_sets/">
+        <link rel="canonical" href="https://example.com/miscellaneous/functional_analysis/hilbert_space/">
       
       
+        <link rel="prev" href="../">
       
-        <link rel="next" href="00-introduction/">
+      
+        <link rel="next" href="../../point_set_topology/open_set_in_real_line/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>はじめに - 数学メモ</title>
+        <title>Hilbert空間の復習 - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,11 +50,11 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../../../stylesheets/theorems.css">
     
-      <link rel="stylesheet" href="../stylesheets/custom.css">
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#hilbert" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href=".." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              はじめに
+              Hilbert空間の復習
             
           </span>
         </div>
@@ -190,7 +192,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -205,20 +207,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -234,7 +234,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             論理と集合
@@ -245,32 +245,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    はじめに
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../logic_and_sets/" class="md-nav__link">
         
   
   
@@ -281,35 +259,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      参考文献
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -322,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-introduction/" class="md-nav__link">
+      <a href="../../../logic_and_sets/00-introduction/" class="md-nav__link">
         
   
   
@@ -345,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-propositions/" class="md-nav__link">
+      <a href="../../../logic_and_sets/01-propositions/" class="md-nav__link">
         
   
   
@@ -368,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-logical_operations/" class="md-nav__link">
+      <a href="../../../logic_and_sets/02-logical_operations/" class="md-nav__link">
         
   
   
@@ -391,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-sets/" class="md-nav__link">
+      <a href="../../../logic_and_sets/03-sets/" class="md-nav__link">
         
   
   
@@ -414,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-conditions_and_quantifiers/" class="md-nav__link">
+      <a href="../../../logic_and_sets/04-conditions_and_quantifiers/" class="md-nav__link">
         
   
   
@@ -482,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/" class="md-nav__link">
+      <a href="../../../real_calculus/" class="md-nav__link">
         
   
   
@@ -543,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
+      <a href="../../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
         
   
   
@@ -566,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/real_number/real_number/" class="md-nav__link">
+      <a href="../../../real_calculus/real_number/real_number/" class="md-nav__link">
         
   
   
@@ -642,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/" class="md-nav__link">
+      <a href="../../../complex_analysis/" class="md-nav__link">
         
   
   
@@ -703,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
+      <a href="../../../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   
@@ -726,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/00_complex_numbers/complex_numbers/" class="md-nav__link">
+      <a href="../../../complex_analysis/00_complex_numbers/complex_numbers/" class="md-nav__link">
         
   
   
@@ -795,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
+      <a href="../../../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
         
   
   
@@ -818,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
+      <a href="../../../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
         
   
   
@@ -841,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
+      <a href="../../../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
         
   
   
@@ -864,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
+      <a href="../../../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
         
   
   
@@ -887,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
+      <a href="../../../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   
@@ -956,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
+      <a href="../../../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
         
   
   
@@ -979,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../complex_analysis/02_complex_integrals/020_cauchy_theorem/" class="md-nav__link">
+      <a href="../../../complex_analysis/02_complex_integrals/020_cauchy_theorem/" class="md-nav__link">
         
   
   
@@ -1014,18 +963,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1041,7 +992,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             雑多なこと
@@ -1055,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -1078,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   
@@ -1139,7 +1090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/" class="md-nav__link">
+      <a href="../../category_theory/" class="md-nav__link">
         
   
   
@@ -1162,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/001-categories/" class="md-nav__link">
+      <a href="../../category_theory/001-categories/" class="md-nav__link">
         
   
   
@@ -1185,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/002-basic-properties/" class="md-nav__link">
+      <a href="../../category_theory/002-basic-properties/" class="md-nav__link">
         
   
   
@@ -1208,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/003-functors/" class="md-nav__link">
+      <a href="../../category_theory/003-functors/" class="md-nav__link">
         
   
   
@@ -1231,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/004-natural-transforms/" class="md-nav__link">
+      <a href="../../category_theory/004-natural-transforms/" class="md-nav__link">
         
   
   
@@ -1254,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/005-yoneda-lemma/" class="md-nav__link">
+      <a href="../../category_theory/005-yoneda-lemma/" class="md-nav__link">
         
   
   
@@ -1323,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/diff_geom/connection/" class="md-nav__link">
+      <a href="../../diff_geom/connection/" class="md-nav__link">
         
   
   
@@ -1346,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
+      <a href="../../diff_geom/levi-civita/" class="md-nav__link">
         
   
   
@@ -1374,18 +1325,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
         
           
           <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
@@ -1401,7 +1354,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Functional analysis
@@ -1415,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/functional_analysis/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1435,10 +1388,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../miscellaneous/functional_analysis/hilbert_space/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Hilbert空間の復習
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1449,6 +1424,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hilbert_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hilbert空間の性質
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1507,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/point_set_topology/open_set_in_real_line/" class="md-nav__link">
+      <a href="../../point_set_topology/open_set_in_real_line/" class="md-nav__link">
         
   
   
@@ -1565,9 +1569,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#hilbert_1" class="md-nav__link">
     <span class="md-ellipsis">
-      参考文献
+      Hilbert空間の性質
     </span>
   </a>
   
@@ -1589,11 +1593,39 @@
 
 
 
-<h1 id="_1">はじめに</h1>
-<p>数学をやるときに必要な分の論理っぽい話をまとめます。書いてる人は基礎論・数理論理学をあんまり知らない(勉強はしたいと思っていますが…)ので、厳密性にこだわらない"素朴な"論理学だと思って読んでもらえるとうれしいです。</p>
-<p>このページの内容は技術書典14で頒布した同人誌 <a href="https://techbookfest.org/product/xmKPP5XVeAkMitKZHttZZ3">数学で使う論理を学ぼう！の本 β版</a> と一部重複しています。</p>
-<h2 id="_2">参考文献</h2>
-<p>嘉田 勝：<a href="https://www.nippyo.co.jp/shop/book/4116.html">論理と集合から始める数学の基礎</a> 日本評論社、2008年</p>
+<h1 id="hilbert">Hilbert空間の復習</h1>
+<p>以下、<span class="arithmatex">\(\mathcal{H}\)</span> を<strong>Hilbert空間</strong>とする。すなわち、<span class="arithmatex">\(\mathbb{R}\)</span>-双線形 (or <span class="arithmatex">\(\mathbb{C}\)</span>-半双線形(後述))かつ正定値な内積 <span class="arithmatex">\(\langle \cdot, \cdot\rangle: \mathcal{H} \times \mathcal{H} \to \mathbb{R} (\text{or }\mathbb{C})\)</span> を備えた <span class="arithmatex">\(\mathbb{R}\)</span>- (or <span class="arithmatex">\(\mathbb{C}\)</span>-) 線形空間であって、内積から定まるnorm <span class="arithmatex">\(\|x\|^2 := \langle x, x \rangle\)</span> に関して完備であるようなものとする。</p>
+<p><strong>半双線形</strong>とは、ここではひとつめの引数に関しては<span class="arithmatex">\(\mathbb{C}\)</span>-線形で、ふたつめの引数に関しては<span class="arithmatex">\(\mathbb{C}\)</span>-反線形(スカラー倍が共役で作用)ということ。</p>
+<p>以下では係数体 <span class="arithmatex">\(\mathbb{K}\)</span> を明記しないが、<span class="arithmatex">\(\mathbb{K} = \mathbb{R}\)</span> であるか <span class="arithmatex">\(\mathbb{K} = \mathbb{C}\)</span> であるかのどちらかだとする。</p>
+<h2 id="hilbert_1">Hilbert空間の性質</h2>
+<p>Hilbert空間の性質を軽くみていこう。</p>
+<div class="admonition proposition">
+<p class="admonition-title">Cauchy-Schwarzの不等式</p>
+<p><span class="arithmatex">\(\mathcal{H}\)</span> をHilbert空間とする。このとき、<span class="arithmatex">\(x, y \in \mathcal{H}\)</span> に対して、
+$$ |\langle x, y \rangle| \leq |x||y| $$
+が成り立つ。</p>
+</div>
+<div class="admonition proposition">
+<p class="admonition-title">和と内積の連続性</p>
+<p><span class="arithmatex">\(\mathcal{H}\)</span> をHilbert空間とする。<span class="arithmatex">\(\lambda \in \mathbb{K}\)</span> を係数体の元とする。このとき、
+$$ (x,y) \mapsto x+y,\,\,\, x \mapsto \lambda x,\,\,\, (x, y) \mapsto \langle x, y\rangle $$
+は連続である。 </p>
+</div>
+<p>Hilbert空間 <span class="arithmatex">\(\mathcal{H}\)</span> とその部分空間 <span class="arithmatex">\(S\)</span> に対して、<span class="arithmatex">\(S\)</span> の<strong>直交</strong> <span class="arithmatex">\(S^\perp\)</span> を、
+$$ S^{\perp} := {x \in \mathcal{H} : \forall y \in S, \langle x, y \rangle = 0 } $$
+によって定める。</p>
+<div class="admonition theorem">
+<p class="admonition-title">直交分解</p>
+<p><span class="arithmatex">\(\mathcal{H}\)</span> をHilbert空間、<span class="arithmatex">\(S \subset \mathcal{H}\)</span> を閉部分空間とする。このとき、<span class="arithmatex">\(\mathcal{H} \cong S \oplus S^{\perp}\)</span> が成り立つ。この同型は次の意味で等長である：<span class="arithmatex">\(x \in \mathcal{H}\)</span> を <span class="arithmatex">\(x = y_1+y_2\)</span>, <span class="arithmatex">\(y_1 \in S, y_2 \in S^{\perp}\)</span> と分解したとき(この分解は一意)、<span class="arithmatex">\(\|x\|^2_\mathcal{H} = \|y_1\|^2_S + \|y_2\|^2_{S^\perp}\)</span> が成り立つ。</p>
+</div>
+<div class="admonition theorem">
+<p class="admonition-title">Rieszの表現定理</p>
+<p><span class="arithmatex">\(\mathcal{H}\)</span> を <span class="arithmatex">\(\mathbb{R}\)</span>(<span class="arithmatex">\(\mathbb{C}\)</span>)-Hilbert空間とする。<span class="arithmatex">\(\mathbb{R}\)</span>-線形写像 <span class="arithmatex">\(L: \mathcal{H} \to \mathbb{R}\)</span> (<span class="arithmatex">\(\mathbb{C}\)</span>-反線形写像 <span class="arithmatex">\(L: \mathcal{H} \to \mathbb{C}\)</span>)が
+$$ |Ly| \leq C |y|_\mathcal{H} \,\, (y \in \mathcal{H}) $$
+を満たすとする。ただし、<span class="arithmatex">\(C\geq 0\)</span> は <span class="arithmatex">\(y\)</span> によらない定数である。このとき、ある <span class="arithmatex">\(x \in \mathcal{H}\)</span> が存在して、
+$$ Ly = \langle x, y\rangle \,\, (y \in \mathcal{H}) $$
+かつ <span class="arithmatex">\(\|x\|_\mathcal{H} \leq C\)</span> が成り立つ。</p>
+</div>
 
 
 
@@ -1614,7 +1646,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2024年8月2日 15:38:31 UTC">2024年8月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月13日 09:14:32 UTC">2025年10月13日</span>
   </span>
 
     
@@ -1663,12 +1695,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
