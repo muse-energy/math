@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://example.com/miscellaneous/glossary/">
+        <link rel="canonical" href="https://example.com/complex_analysis/02_complex_integrals/030_cauchy_formula/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../020_cauchy_theorem/">
       
       
-        <link rel="next" href="../category_theory/">
+        <link rel="next" href="../../../miscellaneous/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>用語集 - 数学メモ</title>
+        <title>Cauchyの積分公式 - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +50,11 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../../../stylesheets/theorems.css">
     
-      <link rel="stylesheet" href="../../stylesheets/custom.css">
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#cauchy" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              用語集
+              Cauchyの積分公式
             
           </span>
         </div>
@@ -192,7 +192,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -248,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/" class="md-nav__link">
+      <a href="../../../logic_and_sets/" class="md-nav__link">
         
   
   
@@ -271,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/00-introduction/" class="md-nav__link">
+      <a href="../../../logic_and_sets/00-introduction/" class="md-nav__link">
         
   
   
@@ -294,7 +294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/01-propositions/" class="md-nav__link">
+      <a href="../../../logic_and_sets/01-propositions/" class="md-nav__link">
         
   
   
@@ -317,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/02-logical_operations/" class="md-nav__link">
+      <a href="../../../logic_and_sets/02-logical_operations/" class="md-nav__link">
         
   
   
@@ -340,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/03-sets/" class="md-nav__link">
+      <a href="../../../logic_and_sets/03-sets/" class="md-nav__link">
         
   
   
@@ -363,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logic_and_sets/04-conditions_and_quantifiers/" class="md-nav__link">
+      <a href="../../../logic_and_sets/04-conditions_and_quantifiers/" class="md-nav__link">
         
   
   
@@ -431,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../real_calculus/" class="md-nav__link">
+      <a href="../../../real_calculus/" class="md-nav__link">
         
   
   
@@ -492,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
+      <a href="../../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
         
   
   
@@ -515,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../real_calculus/real_number/real_number/" class="md-nav__link">
+      <a href="../../../real_calculus/real_number/real_number/" class="md-nav__link">
         
   
   
@@ -550,18 +550,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -577,7 +579,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             複素解析
@@ -591,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -652,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
+      <a href="../../00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   
@@ -675,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/00_complex_numbers/complex_numbers/" class="md-nav__link">
+      <a href="../../00_complex_numbers/complex_numbers/" class="md-nav__link">
         
   
   
@@ -744,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
+      <a href="../../01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
         
   
   
@@ -767,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
+      <a href="../../01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
         
   
   
@@ -790,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
+      <a href="../../01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
         
   
   
@@ -813,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
+      <a href="../../01_holomorphic_functions/035_composition/" class="md-nav__link">
         
   
   
@@ -836,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
+      <a href="../../01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   
@@ -864,18 +866,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
@@ -891,7 +895,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             複素線積分
@@ -905,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
+      <a href="../010_line_integrals/" class="md-nav__link">
         
   
   
@@ -928,113 +932,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../complex_analysis/02_complex_integrals/020_cauchy_theorem/" class="md-nav__link">
+      <a href="../020_cauchy_theorem/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Cauchyの積分定理
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../complex_analysis/02_complex_integrals/030_cauchy_formula/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Cauchyの積分公式
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    雑多なこと
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            雑多なこと
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    はじめに
     
   </span>
   
@@ -1061,20 +964,107 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
   
   
   <span class="md-ellipsis">
-    用語集
+    Cauchyの積分公式
     
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      </a>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    雑多なこと
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            雑多なこと
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../miscellaneous/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../miscellaneous/glossary/" class="md-nav__link">
         
   
   
@@ -1085,35 +1075,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      族
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1164,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/" class="md-nav__link">
         
   
   
@@ -1187,7 +1148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/001-categories/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/001-categories/" class="md-nav__link">
         
   
   
@@ -1210,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/002-basic-properties/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/002-basic-properties/" class="md-nav__link">
         
   
   
@@ -1233,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/003-functors/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/003-functors/" class="md-nav__link">
         
   
   
@@ -1256,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/004-natural-transforms/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/004-natural-transforms/" class="md-nav__link">
         
   
   
@@ -1279,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category_theory/005-yoneda-lemma/" class="md-nav__link">
+      <a href="../../../miscellaneous/category_theory/005-yoneda-lemma/" class="md-nav__link">
         
   
   
@@ -1348,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../diff_geom/connection/" class="md-nav__link">
+      <a href="../../../miscellaneous/diff_geom/connection/" class="md-nav__link">
         
   
   
@@ -1371,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../diff_geom/levi-civita/" class="md-nav__link">
+      <a href="../../../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
         
   
   
@@ -1440,7 +1401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functional_analysis/" class="md-nav__link">
+      <a href="../../../miscellaneous/functional_analysis/" class="md-nav__link">
         
   
   
@@ -1463,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functional_analysis/hilbert_space/" class="md-nav__link">
+      <a href="../../../miscellaneous/functional_analysis/hilbert_space/" class="md-nav__link">
         
   
   
@@ -1532,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../point_set_topology/open_set_in_real_line/" class="md-nav__link">
+      <a href="../../../miscellaneous/point_set_topology/open_set_in_real_line/" class="md-nav__link">
         
   
   
@@ -1583,23 +1544,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      族
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1614,11 +1558,36 @@
 
 
 
-<h1 id="_1">用語集</h1>
-<p>「数学語」「数学の方言」のようなものの説明を書くページです。</p>
-<h3 id="_2">族</h3>
-<p>「(集合 <span class="arithmatex">\(I\)</span> で添え字づけられた)族 <span class="arithmatex">\(\{X_i\}_{i \in I}\)</span>」といったら、<span class="arithmatex">\(I\)</span> のそれぞれの元 <span class="arithmatex">\(i \in I\)</span> に対して、なんらかのもの <span class="arithmatex">\(X_i\)</span> が対応している状況のことをいう。</p>
-<p>添字をあまり考えずに、「～～の族」ということもある(と思う)。この場合は「～～の集合」とほぼ同じ意味のような気がする。(自信なし)</p>
+<h1 id="cauchy">Cauchyの積分公式</h1>
+<p>Cauchyの積分定理を活用することで、Cauchyの積分公式を得る。これは複素解析における最重要定理といってよいもので、正則関数の良い性質はすべてここから来ているといっても過言ではない。</p>
+<div class="admonition theorem">
+<p class="admonition-title">Cauchyの積分公式</p>
+<p><span class="arithmatex">\(\Omega \subset \mathbb{R}^2\)</span> を領域として、<span class="arithmatex">\(C: [a, b] \to \Omega\)</span> を区分的 <span class="arithmatex">\(C^1\)</span> 級曲線とする。
+<span class="arithmatex">\(C\)</span> は左回りの単純閉曲線であるとする。また、ある領域 <span class="arithmatex">\(U \subset \Omega\)</span> が存在して、その境界 <span class="arithmatex">\(\partial U\)</span> は<span class="arithmatex">\(C\)</span> (の像)と一致すると仮定する。このとき、<span class="arithmatex">\(\Omega\)</span> 上の <span class="arithmatex">\(C^1\)</span> 級正則関数 <span class="arithmatex">\(f\)</span> と<span class="arithmatex">\(z \in U\)</span> に対して、
+$$ f(z) = \frac{1}{2\pi i}\int_C \frac{f(\zeta)}{\zeta - z} d\zeta $$
+が成り立つ。</p>
+</div>
+<p>公式を眺めてみると、関数 <span class="arithmatex">\(f\)</span> の <span class="arithmatex">\(z \in U\)</span> における値が、<span class="arithmatex">\(C\)</span> すなわち <span class="arithmatex">\(\partial U\)</span> 上の積分だけで決まっているということがわかる。すなわち、<span class="arithmatex">\(f\)</span> の <span class="arithmatex">\(U\)</span> における挙動は、<span class="arithmatex">\(U\)</span>の境界の値から完全に決定されてしまうわけである。「境界を見れば内部がわかる」というところに、正則関数の性質の良さが表れている。</p>
+<p><strong>証明</strong> <span class="arithmatex">\(U_\epsilon := U\setminus \overline{\Delta(z, \epsilon)}\)</span> とおく。すると、関数 <span class="arithmatex">\(g(\zeta) := \displaystyle\frac{f(\zeta)}{\zeta - z}\)</span> は <span class="arithmatex">\(U_\epsilon\)</span> 上正則である。
+また、<span class="arithmatex">\(\partial U_\epsilon = C \cup \partial \Delta(z, \epsilon)\)</span> であるから、<span class="arithmatex">\(U_\epsilon\)</span> 上でCauchyの積分定理より、
+$$ \int_C g(\zeta) d\zeta - \int_{\partial \Delta(z, \epsilon)} g(\zeta) d\zeta = 0 $$
+が成り立つ。(内側の境界での積分は符号がマイナスになる)</p>
+<p>2項目を計算しよう。</p>
+<div class="arithmatex">\[ \begin{align*}
+\int_{\partial \Delta(z, \epsilon)} g(\zeta) d\zeta &amp;= \int_{\theta = 0}^{2\pi} g(z + \epsilon e^{i\theta}) d(\epsilon e^{i\theta})\\
+&amp;= \int_{\theta = 0}^{2\pi} \frac{f(z + \epsilon e^{i\theta})}{z + \epsilon e^{i \theta} - z} \epsilon\cdot ie^{i \theta} d\theta\\
+&amp;= i \int_{\theta = 0}^{2\pi} f(z + \epsilon e^{i \theta}) d \theta
+\end{align*} \]</div>
+<p><span class="arithmatex">\(f\)</span> の連続性から、被積分関数は <span class="arithmatex">\(\epsilon \to 0\)</span> のとき <span class="arithmatex">\(\theta\)</span> によらず一様に <span class="arithmatex">\(f(z)\)</span> に収束する。したがって、この積分は <span class="arithmatex">\(\epsilon \to 0\)</span> のとき
+$$ i \int_{\theta = 0}^{2\pi} f(z) d \theta = 2\pi i f(z) $$
+に収束する。</p>
+<p>いま、
+$$ \int_C g(\zeta) d\zeta = \int_{\partial \Delta(z, \epsilon)} g(\zeta) d\zeta$$
+だったので、両辺で<span class="arithmatex">\(\epsilon \to 0\)</span> とすると、
+$$ \int_C g(\zeta) d\zeta = 2 \pi i f(z) $$ 
+を得る。整理すると、
+$$ f(z) = \frac{1}{2 \pi i}\int_C g(\zeta) d \zeta = \frac{1}{2 \pi i}\int_C \frac{f(\zeta)}{\zeta - z} d\zeta$$
+がわかる。□</p>
 
 
 
@@ -1639,7 +1608,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2024年9月14日 18:20:09 UTC">2024年9月14日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月15日 19:35:03 UTC">2025年10月15日</span>
   </span>
 
     
@@ -1688,12 +1657,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
