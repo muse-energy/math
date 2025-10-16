@@ -2,138 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/00_complex_numbers/complex_conjugate/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/00_complex_numbers/complex_numbers/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/01_holomorphic_functions/010_holomorphic_function/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/01_holomorphic_functions/020_linear_approximation/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/01_holomorphic_functions/030_cauchy-riemann/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/01_holomorphic_functions/035_composition/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/02_complex_integrals/010_line_integrals/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/02_complex_integrals/020_cauchy_theorem/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/complex_analysis/02_complex_integrals/030_cauchy_formula/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/00-introduction/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/01-propositions/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/02-logical_operations/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/03-sets/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/logic_and_sets/04-conditions_and_quantifiers/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/glossary/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/001-categories/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/002-basic-properties/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/003-functors/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/004-natural-transforms/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/category_theory/005-yoneda-lemma/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/diff_geom/connection/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/diff_geom/levi-civita/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/functional_analysis/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/functional_analysis/hilbert_space/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/miscellaneous/point_set_topology/open_set_in_real_line/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/real_calculus/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/real_calculus/real_number/continuity_axiom/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://example.com/real_calculus/real_number/real_number/</loc>
-         <lastmod>2025-10-15</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
 </urlset>
