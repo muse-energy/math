@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -1557,7 +1557,8 @@
 
 
 <h1 id="_1">命題</h1>
-<p>正しいか正しくないかのどちらかであるような数学的主張(文章や数式)のことを、<strong>命題</strong>という。
+<p>数学では、考えているものの性質を、正しいか正しくないかがはっきりとわかる形で述べることが多い。例えば、「<span class="arithmatex">\(12\)</span> は <span class="arithmatex">\(4\)</span> の倍数である」とか、「<span class="arithmatex">\(2+3=5\)</span>」はそのようなものの例である。また、正しくないことを述べた場合も、正しくないことがはっきりとわかることがある。例えば、「<span class="arithmatex">\(13\)</span> は <span class="arithmatex">\(4\)</span> の倍数である」とか、「<span class="arithmatex">\(2+3=6\)</span>」は、正しくないことがはっきりとわかる。</p>
+<p>このように、正しいか正しくないかのどちらかであるような数学的主張(文章や数式)のことを、<strong>命題</strong>という。
 主張が正しいとき、その命題は<strong>真</strong>であるという。主張が正しくないとき、その命題は<strong>偽</strong>であるという。命題の真偽のことを、命題の<strong>真理値</strong>ともいう。
 「真」のことを「<span class="arithmatex">\(\mathsf{True}\)</span>」「T」「<span class="arithmatex">\(\top\)</span>」とも表す。また、「偽」のことを「<span class="arithmatex">\(\mathsf{False}\)</span>」「F」「<span class="arithmatex">\(\perp\)</span>」とも表す。</p>
 <div class="admonition example">
@@ -1570,7 +1571,7 @@
 <li>「<span class="arithmatex">\(0 \leq 1\)</span>」は命題である。この命題の真理値は真である。</li>
 </ol>
 </div>
-<p>命題の真理値は、必ずしも現実的に確かめられるわけではない。例えば、「差が <span class="arithmatex">\(2\)</span> であるような素数のペアが無限に存在する」という主張は命題だが、その真偽は(2024年1月現在)確かめられていない。</p>
+<p>命題の真理値は、必ずしも現実的に確かめられるわけではない。例えば、「差が <span class="arithmatex">\(2\)</span> であるような素数のペアが無限に存在する」という主張は命題だが、その真偽は(2025年11月現在)確かめられていない。</p>
 <p>命題ではないものの例をいくつか挙げる：</p>
 <div class="admonition example">
 <p class="admonition-title">例</p>
@@ -1583,18 +1584,18 @@
 また、<span class="arithmatex">\(x=-1\)</span> を指定すると、数式は「<span class="arithmatex">\(-1&gt;0\)</span>」となる。これは偽の命題である。</p>
 <p>このように、数式「<span class="arithmatex">\(x&gt;0\)</span>」は <span class="arithmatex">\(x\)</span> として指定する値によって真偽が異なる。
 そのため、<span class="arithmatex">\(x\)</span> として具体的な数を指定するまでは「<span class="arithmatex">\(x&gt;0\)</span>」は命題ではないと考えることにする。
-このように、変数の値を指定すると命題になるようなもののことを、<strong>述語</strong>あるいは<strong>条件</strong>とよぶ。</p>
+変数の値を指定すると命題になるようなもののことを、<strong>述語</strong>あるいは<strong>条件</strong>とよぶ。</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">例</p>
 <p>数式「<span class="arithmatex">\(x+1&gt;x\)</span>」を考えよう。これは <span class="arithmatex">\(x\)</span> が具体的に指定されていないが、もし <span class="arithmatex">\(x\)</span> として特定の実数を指定したとしたら、それがどんな実数であっても「<span class="arithmatex">\(x+1&gt;x\)</span>」は真になる。
-そのため、「<span class="arithmatex">\(x+1&gt;x\)</span>」はそれ自体が真の命題に見えるかもしれない。しかし、「<span class="arithmatex">\(x+1&gt;x\)</span>」は <span class="arithmatex">\(x\)</span> を変数とする述語であり、命題ではないと考えたほうが良いだろう。</p>
-<p>これをより正確に命題として述べると、たとえば次のような形になる：</p>
+そのため、「<span class="arithmatex">\(x+1&gt;x\)</span>」は真の命題と解釈してもよさそうに見える。しかし、「<span class="arithmatex">\(x+1&gt;x\)</span>」には変数 <span class="arithmatex">\(x\)</span> が含まれており、<span class="arithmatex">\(x\)</span> の値によって異なる命題を作ることができる。そのため、「<span class="arithmatex">\(x+1&gt;x\)</span>」は <span class="arithmatex">\(x\)</span> に関する条件であり、命題ではないと考えたほうが良いだろう。</p>
+<p>より正確に命題として述べようとすると、たとえば次のような形になるだろう：</p>
 <ul>
 <li>どんな実数 <span class="arithmatex">\(x\)</span> に対しても、<span class="arithmatex">\(x+1&gt;x\)</span> である。</li>
 </ul>
-<p>このような「どんな～に対しても」という形の命題は数学ではとても頻繁に現れるが、扱いは簡単ではない。詳しくはのちに説明する。</p>
-<p>普段の数学では、(紛らわしいのだが)「どんな実数 <span class="arithmatex">\(x\)</span> に対しても」のような部分を省略することがある。論理の部分を学んでいるときは、なるべく省略しないようにした方がよさそうである。</p>
+<p>このような「どんな～に対しても」という形の命題は数学ではとても頻繁に現れる。詳しくはのちに説明する。</p>
+<p>普段の数学では、(紛らわしいのだが)「どんな実数 <span class="arithmatex">\(x\)</span> に対しても」のような部分を省略することがある。論理を学んでいるときは、なるべく省略しないようにした方がよさそうである。</p>
 </div>
 
 
@@ -1616,7 +1617,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2024年1月15日 16:10:14 UTC">2024年1月15日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月9日 18:50:57 UTC">2025年11月9日</span>
   </span>
 
     

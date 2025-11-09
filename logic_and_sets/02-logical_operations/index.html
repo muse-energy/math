@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -1687,7 +1687,7 @@
 
 
 <h1 id="_1">論理演算</h1>
-<p>いくつかの命題を組み合わせて新たな命題を作る方法として、論理演算を紹介する。</p>
+<p>いくつかの命題を組み合わせて、より複雑なことを表現することができる。そのような方法として、<strong>論理演算</strong>と呼ばれる操作を紹介しよう。</p>
 <h2 id="_2">論理積</h2>
 <p>命題 <span class="arithmatex">\(p\)</span> と命題 <span class="arithmatex">\(q\)</span> の<strong>論理積</strong> <span class="arithmatex">\(p \wedge q\)</span> を、以下のような真理値を持つ命題とする：</p>
 <ul>
@@ -1829,7 +1829,7 @@
 </tbody>
 </table>
 <p><span class="arithmatex">\(p\)</span> が偽のとき、<span class="arithmatex">\(q\)</span> の真偽によらず <span class="arithmatex">\(p \to q\)</span> は真の命題となることに注意しよう(こういうのをvacuous truthと呼ぶらしいです)。
-これは違和感を持たれやすいところだが、実はこうしておくと議論を進める際に都合が良い。</p>
+このように定めることに違和感を持つ人もいると思うが、以下の例でみるように、数学の議論ではこうしておくと都合がいい。</p>
 <div class="admonition example">
 <p class="admonition-title">例</p>
 <p>「<span class="arithmatex">\(4\)</span> の倍数は偶数である」という命題を考えよう。この命題は、より詳しく書いてみると次のようになる：</p>
@@ -1905,22 +1905,11 @@
 <li><span class="arithmatex">\(p\)</span>が偽、 <span class="arithmatex">\(q\)</span> が真</li>
 <li><span class="arithmatex">\(p\)</span>が偽、 <span class="arithmatex">\(q\)</span> が偽</li>
 </ul>
-<p>このように、仮定 <span class="arithmatex">\(p\)</span> が偽のときに「<span class="arithmatex">\(p \to q\)</span>」が真であるとしておくと都合が良い。</p>
+<p>このように、仮定 <span class="arithmatex">\(p\)</span> が偽のときに「<span class="arithmatex">\(p \to q\)</span>」が真であるとしておくと都合がいい。</p>
 </div>
-<ul>
-<li>いろいろな論理学をちゃんと勉強したらもうちょっと別の説明や見方もできるかもしれないですね…</li>
-<li>論理包含を表す記号として、「<span class="arithmatex">\(\to\)</span>」ではなく「<span class="arithmatex">\(\Rightarrow\)</span>」を使うことも多い気がするが、明確な違いを私は知りません。<ul>
-<li>論理学的な文脈では「<span class="arithmatex">\(\to\)</span>」をよく見る気がする。</li>
-<li>普段の数学では論理的な関係を示すために「<span class="arithmatex">\(\Rightarrow\)</span>」を使うことが多い気がする。<ul>
-<li>「したがって」といった意味の板書やノートでなんとなく矢印を使いたくなることがあるが、「<span class="arithmatex">\(\Rightarrow\)</span>」では意味が通らないときに「<span class="arithmatex">\(\rightsquigarrow\)</span>」を使うと便利なことがある。(具体例がパッと出てこない… 私はよく使います)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <h2 id="_6">命題変数、命題の同値性</h2>
 <p><span class="arithmatex">\(p, q, r, \ldots\)</span> を命題とする。これらの命題と論理演算(<span class="arithmatex">\(\wedge\)</span>, <span class="arithmatex">\(\vee\)</span>, <span class="arithmatex">\(\neg\)</span>, <span class="arithmatex">\(\to\)</span> など)を組み合わせて、複雑な命題を作ることができる。例えば、
-$$(p \wedge q) \to  (r \vee \neg p) $$
+$$ (p \wedge q) \to  (r \vee \neg p) $$
 のようなものを作ることができる。(↑この式には特に深い意味はない)</p>
 <p>このとき、式全体の真理値は、式に現れる命題(ここでは <span class="arithmatex">\(p, q, r\)</span>)の真理値のみによって決まり、命題 <span class="arithmatex">\(p, q, r\)</span> の具体的な内容は関係しない。そこで、<span class="arithmatex">\(p, q, r\)</span> を「真」または「偽」の2通りの値をとる変数だと思うことができる。それぞれの命題をこのようにみなしたものを、<strong>命題変数</strong>と呼ぶことにする。</p>
 <p>命題変数 <span class="arithmatex">\(p_1,p_2, \ldots, p_n\)</span> からなる式 <span class="arithmatex">\(P\)</span>, <span class="arithmatex">\(Q\)</span> を考える。<span class="arithmatex">\(P\)</span>と<span class="arithmatex">\(Q\)</span>が<strong>同値</strong>な式であるとは、それぞれの命題変数にどのような真理値を割り当てたとしても、<span class="arithmatex">\(P\)</span>と<span class="arithmatex">\(Q\)</span>の真偽が一致することをいう。式 <span class="arithmatex">\(P\)</span> と <span class="arithmatex">\(Q\)</span> が同値なとき、<span class="arithmatex">\(P \equiv Q\)</span> と書く。</p>
@@ -1955,7 +1944,7 @@ $$(p \wedge q) \to  (r \vee \neg p) $$
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2024年8月2日 15:38:31 UTC">2024年8月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月9日 18:50:57 UTC">2025年11月9日</span>
   </span>
 
     
