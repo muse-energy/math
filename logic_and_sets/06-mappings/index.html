@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://example.com/complex_analysis/">
+        <link rel="canonical" href="https://example.com/logic_and_sets/06-mappings/">
       
       
-        <link rel="prev" href="../real_calculus/real_number/real_number/">
+        <link rel="prev" href="../05-proofs/">
       
       
-        <link rel="next" href="00_complex_numbers/complex_conjugate/">
+        <link rel="next" href="../07-sets2/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>はじめに - 数学メモ</title>
+        <title>写像(1) - 数学メモ</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +53,11 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
-      <link rel="stylesheet" href="../stylesheets/theorems.css">
+      <link rel="stylesheet" href="../../stylesheets/theorems.css">
     
-      <link rel="stylesheet" href="../stylesheets/custom.css">
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href=".." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../.." title="数学メモ" class="md-header__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              はじめに
+              写像(1)
             
           </span>
         </div>
@@ -194,7 +194,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
+    <a href="../.." title="数学メモ" class="md-nav__button md-logo" aria-label="数学メモ" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -209,18 +209,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -241,7 +243,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -259,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -287,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/00-introduction/" class="md-nav__link">
+      <a href="../00-introduction/" class="md-nav__link">
         
   
   
@@ -315,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/01-propositions/" class="md-nav__link">
+      <a href="../01-propositions/" class="md-nav__link">
         
   
   
@@ -343,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/02-logical_operations/" class="md-nav__link">
+      <a href="../02-logical_operations/" class="md-nav__link">
         
   
   
@@ -371,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/03-sets/" class="md-nav__link">
+      <a href="../03-sets/" class="md-nav__link">
         
   
   
@@ -399,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/04-conditions_and_quantifiers/" class="md-nav__link">
+      <a href="../04-conditions_and_quantifiers/" class="md-nav__link">
         
   
   
@@ -427,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/05-proofs/" class="md-nav__link">
+      <a href="../05-proofs/" class="md-nav__link">
         
   
   
@@ -452,10 +454,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../logic_and_sets/06-mappings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -471,6 +482,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -483,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logic_and_sets/07-sets2/" class="md-nav__link">
+      <a href="../07-sets2/" class="md-nav__link">
         
   
   
@@ -565,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/" class="md-nav__link">
+      <a href="../../real_calculus/" class="md-nav__link">
         
   
   
@@ -640,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
+      <a href="../../real_calculus/real_number/continuity_axiom/" class="md-nav__link">
         
   
   
@@ -668,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../real_calculus/real_number/real_number/" class="md-nav__link">
+      <a href="../../real_calculus/real_number/real_number/" class="md-nav__link">
         
   
   
@@ -708,20 +720,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -742,7 +752,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -757,19 +767,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../complex_analysis/" class="md-nav__link">
         
   
   
@@ -785,7 +786,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -845,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00_complex_numbers/complex_conjugate/" class="md-nav__link">
+      <a href="../../complex_analysis/00_complex_numbers/complex_conjugate/" class="md-nav__link">
         
   
   
@@ -873,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00_complex_numbers/complex_numbers/" class="md-nav__link">
+      <a href="../../complex_analysis/00_complex_numbers/complex_numbers/" class="md-nav__link">
         
   
   
@@ -956,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/010_holomorphic_function/" class="md-nav__link">
         
   
   
@@ -984,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/020_linear_approximation/" class="md-nav__link">
         
   
   
@@ -1012,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/030_cauchy-riemann/" class="md-nav__link">
         
   
   
@@ -1040,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/035_composition/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/035_composition/" class="md-nav__link">
         
   
   
@@ -1068,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
+      <a href="../../complex_analysis/01_holomorphic_functions/040_exp_and_trigonometric_functinos/" class="md-nav__link">
         
   
   
@@ -1151,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02_complex_integrals/010_line_integrals/" class="md-nav__link">
+      <a href="../../complex_analysis/02_complex_integrals/010_line_integrals/" class="md-nav__link">
         
   
   
@@ -1179,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02_complex_integrals/020_cauchy_theorem/" class="md-nav__link">
+      <a href="../../complex_analysis/02_complex_integrals/020_cauchy_theorem/" class="md-nav__link">
         
   
   
@@ -1207,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02_complex_integrals/030_cauchy_formula/" class="md-nav__link">
+      <a href="../../complex_analysis/02_complex_integrals/030_cauchy_formula/" class="md-nav__link">
         
   
   
@@ -1297,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/" class="md-nav__link">
+      <a href="../../miscellaneous/" class="md-nav__link">
         
   
   
@@ -1325,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/glossary/" class="md-nav__link">
+      <a href="../../miscellaneous/glossary/" class="md-nav__link">
         
   
   
@@ -1400,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/" class="md-nav__link">
         
   
   
@@ -1428,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/001-categories/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/001-categories/" class="md-nav__link">
         
   
   
@@ -1456,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/002-basic-properties/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/002-basic-properties/" class="md-nav__link">
         
   
   
@@ -1484,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/003-functors/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/003-functors/" class="md-nav__link">
         
   
   
@@ -1512,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/004-natural-transforms/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/004-natural-transforms/" class="md-nav__link">
         
   
   
@@ -1540,7 +1540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/category_theory/005-yoneda-lemma/" class="md-nav__link">
+      <a href="../../miscellaneous/category_theory/005-yoneda-lemma/" class="md-nav__link">
         
   
   
@@ -1623,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/diff_geom/connection/" class="md-nav__link">
+      <a href="../../miscellaneous/diff_geom/connection/" class="md-nav__link">
         
   
   
@@ -1651,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
+      <a href="../../miscellaneous/diff_geom/levi-civita/" class="md-nav__link">
         
   
   
@@ -1734,7 +1734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/functional_analysis/" class="md-nav__link">
+      <a href="../../miscellaneous/functional_analysis/" class="md-nav__link">
         
   
   
@@ -1762,7 +1762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/functional_analysis/hilbert_space/" class="md-nav__link">
+      <a href="../../miscellaneous/functional_analysis/hilbert_space/" class="md-nav__link">
         
   
   
@@ -1845,7 +1845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../miscellaneous/point_set_topology/open_set_in_real_line/" class="md-nav__link">
+      <a href="../../miscellaneous/point_set_topology/open_set_in_real_line/" class="md-nav__link">
         
   
   
@@ -1916,8 +1916,38 @@
 
 
 
-<h1 id="_1">はじめに</h1>
-<p>勉強会で複素解析の講義をしたときのノートをまとめます。</p>
+<h1 id="1">写像(1)</h1>
+<p>高校の数学では、二次関数(あるいは一般に<span class="arithmatex">\(n\)</span>次間数)・三角関数・指数関数など、様々な関数を扱っていた。これらは、実数 <span class="arithmatex">\(x\)</span> を入力するとなんらかの実数 <span class="arithmatex">\(f(x)\)</span> を出力するものだと考えることができる。</p>
+<p>また、平面を反時計回りに90°回転させるという操作を考えてみよう。この操作は、点 <span class="arithmatex">\(P(x, y)\)</span> を入力すると別の点 <span class="arithmatex">\(Q(-y, x)\)</span> を出力するものだと考えることができる。</p>
+<p>これらのように、入力に対してなんらかの操作がほどこされて出力が得られる、という状況は数学では非常に多い。このような状況は、<strong>写像</strong>という概念を用いて一般的に表すことができる。</p>
+<div class="admonition definition">
+<p class="admonition-title">定義(写像)</p>
+<p><span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span> を集合とする。<span class="arithmatex">\(A\)</span> の元 <span class="arithmatex">\(a\)</span> に対して、<span class="arithmatex">\(B\)</span> の元 <span class="arithmatex">\(f(a)\)</span> を定めるような規則 <span class="arithmatex">\(f\)</span> のことを、<span class="arithmatex">\(A\)</span> から <span class="arithmatex">\(B\)</span> への<strong>写像</strong>という。このとき、<span class="arithmatex">\(A\)</span> のことを <span class="arithmatex">\(f\)</span> の<strong>定義域</strong>とよび、<span class="arithmatex">\(B\)</span> のことを <span class="arithmatex">\(f\)</span> の<strong>終域</strong>と呼ぶ。また、このとき、<span class="arithmatex">\(f: A \to B\)</span> とか、<span class="arithmatex">\(A \overset{f}{\to} B\)</span> のように書く。</p>
+</div>
+<p>写像の例をいくつか挙げる。</p>
+<div class="admonition example">
+<p class="admonition-title">例</p>
+<ul>
+<li>普通の二次関数 $f_1(x) = x^2 $ は、実数 <span class="arithmatex">\(x\)</span> に対して実数 <span class="arithmatex">\(x^2\)</span> を定める。すなわち、<span class="arithmatex">\(f_1\)</span> は<span class="arithmatex">\(\mathbb{R}\)</span> を <span class="arithmatex">\(\mathbb{R}\)</span> への写像である。</li>
+<li>同様に、<span class="arithmatex">\(f_2(x) = \sin x\)</span>, <span class="arithmatex">\(f_3(x) = \cos x\)</span>, <span class="arithmatex">\(f_4(x) = e^x\)</span> はいずれも<span class="arithmatex">\(\mathbb{R}\)</span> から <span class="arithmatex">\(\mathbb{R}\)</span> への写像である。</li>
+<li><span class="arithmatex">\(f_5(x) = 1/x\)</span> は、 <span class="arithmatex">\(x=0\)</span> のときに定義されていないので、<span class="arithmatex">\(\mathbb{R}\)</span> から <span class="arithmatex">\(\mathbb{R}\)</span> への写像とは言えない。<ul>
+<li><span class="arithmatex">\(\mathbb{R}^* := \mathbb{R} \setminus \{0\}\)</span> (差集合)とおくと、<span class="arithmatex">\(f_5\)</span> は <span class="arithmatex">\(\mathbb{R}^*\)</span> から <span class="arithmatex">\(\mathbb{R}\)</span> への写像である。</li>
+</ul>
+</li>
+<li>座標平面上の三角形全体の集合を <span class="arithmatex">\(T\)</span> とおく。三角形 <span class="arithmatex">\(\triangle ABC\)</span> に対してその面積 <span class="arithmatex">\(S(\triangle ABC)\)</span> を対応させることにより、写像 <span class="arithmatex">\(S: T \to \mathbb{R}\)</span> が得られる。</li>
+</ul>
+</div>
+<ul>
+<li>恒等写像</li>
+<li>合成</li>
+<li>単射、全射</li>
+<li>全単射、逆写像</li>
+</ul>
+<p>写像(2)で書くこと：</p>
+<ul>
+<li>写像のグラフ</li>
+<li>集合の像、逆像</li>
+</ul>
 
 
 
@@ -1938,7 +1968,7 @@
     <span class="md-icon" title="最終更新日">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2023年11月2日 06:09:18 UTC">2023年11月2日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月20日 18:14:23 UTC">2025年11月20日</span>
   </span>
 
     
@@ -1988,12 +2018,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
       
