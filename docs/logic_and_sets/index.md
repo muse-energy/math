@@ -5,4 +5,6 @@
 このページの内容は技術書典14で頒布した同人誌 [数学で使う論理を学ぼう！の本 β版](https://techbookfest.org/product/xmKPP5XVeAkMitKZHttZZ3) と一部重複しています。
 
 ## 参考文献
-嘉田 勝：[論理と集合から始める数学の基礎](https://www.nippyo.co.jp/shop/book/4116.html) 日本評論社、2008年
+- 嘉田 勝：[論理と集合から始める数学の基礎](https://www.nippyo.co.jp/shop/book/4116.html) 日本評論社、2008年
+   - とても分かりやすい本です。
+   - 全体にわたって激しく参考にさせていただいております。
